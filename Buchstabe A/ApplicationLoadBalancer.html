@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/buchstaben.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+        <title>Techfox</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <!-----------in <h1> servic name---------->
+                <h1 style="text-shadow:4px 1px 4px rgb(137, 83, 222) ;">Application Load Balancer </h1>
+                <small style="color: rgb(137, 83, 222);">Application  Load Balancer </small>
+            </div>
+            <div class="nav-right">
+                <img src="./fotos/Application LoadBalancerIcon.webp" alt="servic icon" width="100 px" height="100px">
+            </div>
+        </nav>       
+            <div>
+                <!--------in <h3> kutz erklärung----------->
+                <h3>Der Application Load Balancer von AWS verteilt eingehenden Datenverkehr auf Anwendungslevel.</h3>
+                <hr>
+            </div>
+        <section id="navbar">
+            <!------------anfang 5 boton(nur zum wiessen)----------> 
+            <div class="springen">
+                <div class="icon1">
+                    <i><img src="./fotos/pencil-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#BS" title="erklärung über services">Beschreibung</a>
+                </div>
+            </div>
+            <div class="springen"> 
+                <div class="icon2">
+                    <i><img src="./fotos/wand-magic-sparkles-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SW" title="prüfung_hilfe">Schlüsselwörter</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon3">
+                    <i><img src="./fotos/image-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SE" title="Grafische Erklärung über diese servic">Grafik</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon4">
+                    <i><img src="./fotos/question-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#PF"  title="Beispiele prüfung Fragen">Question</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon5">
+                    <a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html" target="_black" title="für weitere info können sie direkt zu AWS gehen ">gehe zu </a>
+                    <i><img src="./fotos/aws.svg" alt="servic icon" width="30 px" height="30px"></i>
+                </div>
+            </div>
+        </section>
+            <div class="AA">
+                <hr>
+                <br>
+            </div>
+    </header>
+        <main>
+            <div class="bschreibung" id="BS">
+                <h2>Beschreibung</h2>
+                <!-----------in <P> Lange erklärung----------->
+                
+                    <p>
+
+                        Mit dem <b>Application Load Balancer</b> können sie die eingehenden Anfragen an eine Zielgruppe mit einer
+                        Lambda-Funktion als Ziel weiterleiten. Elastic Load Balancing verteilt Ihren eingehenden Datenverkehr
+                        automatisch auf mehrere Ziele, wie EC2-Instanzen, Container und IP-Adressen, in einer oder mehreren
+                        Availability Zones.<br><br> Es überwacht den Zustand seiner registrierten Ziele und leitet den Datenverkehr nur
+                        an die fehlerfreien Ziele weiter. Elastic Load Balancing skaliert Ihren Load Balancer, wenn sich Ihr
+                        eingehender Datenverkehr im Laufe der Zeit ändert. Es kann automatisch auf die überwiegende Mehrheit der
+                        Arbeitslasten skaliert werden.<br><br>
+                        Elastic Load Balancing unterstützt die folgenden Load Balancer:
+                        <b>Application Load Balancer, Network Load Balancer, Gateway Load Balancer und Classic Load Balancer</b>.<br><br>
+                        Sie können den Load-Balancer-Typ auswählen, der Ihren Anforderungen am besten entspricht. In diesem
+                        Leitfaden werden Anwendungs-Load-Balancer erläutert. Ein Load Balancer dient als zentraler Kontaktpunkt
+                        für Clients. Clients senden Anforderungen an den Load Balancer, die dieser wiederum an Ziele wie z. B.
+                        EC2-Instances sendet. <br><br>
+                        Zur Konfiguration Ihres Load Balancers erstellen Sie Zielgruppen und registrieren
+                        anschließend Ziele bei den Zielgruppen. Außerdem erzeugen Sie Listener für Verbindungsanforderungen von
+                        Clients und Listener-Regeln zum Weiterleiten von Anforderungen von Clients an Ziele in einer oder
+                        mehreren Zielgruppen.<br><br>
+                        <b>Zielgruppen mit Lambda-Funktionen als Ziel:</b> Application Load Balancer kann eingehende Anfragen an
+                        eine Zielgruppe mit einer Lambda-Funktion als Ziel weiterleiten.<br><br>
+                        <b>Automatische Verteilung auf verschiedene Ziele:</b> Elastic Load Balancing verteilt eingehenden
+                        Datenverkehr automatisch auf EC2-Instanzen, Container und IP-Adressen in einer oder mehreren
+                        Availability Zones.<br><br>
+                        <b>Überwachung und Weiterleitung an fehlerfreie Ziele:</b> Der Load Balancer überwacht den Zustand der
+                        registrierten Ziele und leitet den Datenverkehr nur an die funktionierenden Ziele weiter.<br><br>
+                        <b>Skalierung entsprechend dem Datenverkehr:</b> Elastic Load Balancing skaliert den Load Balancer
+                        automatisch, um sich änderndem eingehendem Datenverkehr gerecht zu werden.<br><br>
+                        <b>Unterstützung verschiedener Load Balancer-Typen:</b> Elastic Load Balancing unterstützt verschiedene
+                        Load Balancer-Typen, darunter Application Load Balancer, Network Load Balancer, Gateway Load Balancer
+                        und Classic Load Balancer.<br><br>
+                        <b>Auswahl des geeigneten Load Balancer-Typs:</b> Kunden können den Load-Balancer-Typ wählen, der ihren
+                        Anforderungen am besten entspricht.<br><br>
+                        <b>Zentraler Kontaktpunkt für Clients:</b> Ein Load Balancer fungiert als zentraler Kontaktpunkt für
+                        Clients, die Anfragen an ihn senden.<br><br>
+                        <b>Konfiguration durch Erstellung von Zielgruppen und Registrierung von Zielen:</b> Zur Konfiguration
+                        des Load Balancers erstellen Kunden Zielgruppen und registrieren Ziele bei den Zielgruppen.<br><br>
+                        <b>Erstellung von Listenern und Listener-Regeln:</b> Kunden erzeugen Listener für
+                        Verbindungsanforderungen von Clients und definieren Listener-Regeln zum Weiterleiten von Anfragen von
+                        Clients an Ziele in einer oder mehreren Zielgruppen.<br><br>
+        
+        
+                        -Application Load Balancer leitet Anfragen an Lambda-Funktionen weiter.<br><br>
+                        -Elastic Load Balancing verteilt Datenverkehr auf EC2, Container und IP-Adressen.<br><br>
+                        -Überwacht und leitet nur an fehlerfreie Ziele weiter.<br><br>
+                        -Skaliert automatisch entsprechend dem Datenverkehr.<br><br>
+                        -Unterstützt verschiedene Load Balancer-Typen.<br><br>
+                        -Kunden wählen den passenden Load-Balancer-Typ.<br><br>
+                        -Load Balancer ist zentraler Kontaktpunkt für Clients.<br><br>
+                        -Konfiguration: Erstellen von Zielgruppen, Registrierung von Zielen, Erzeugen von Listenern und
+                        Listener-Regeln.<br><br>
+            </div>
+            <div class="schlagworter"  id="SW">
+                <!-------------in <li> schlagwörter-------------->
+                <h2>Schlüsselwörter</h2>
+                <p>Schlüsselworte bzw. Schlagworte sollen uns dabei helfen, einen Service leichter zu erkennen, wenn es um Prüfungsfragen geht. Ließ dir die Fragen richtig durch und achte auf folgende Schlüsselworte. Sie können dir bei der Beantwortung der Fragen helfen.</p>
+                <ul>
+                    <li>Lastverteilung auf Anwendungsebene</li>
+                    <li>HTTP- und HTTPS-Traffic-Routing</li>
+                    <li>Skalierbare und flexible Architektur</li>
+                    <li>Anwendungsrouting basierend auf Inhaltsanfragen</li>
+                    <li>Container- und Microservices-Unterstützung</li>
+                    <li>TLS-Routing</li>
+                    <li>Integration mit AWS-Services wie Auto Scaling</li>
+                    <li>Gesundheitsüberwachung und Fehlererkennung</li>
+                    <li>SSL/TLS-Zertifikatverwaltung</li>
+                    <li>Unterstützung für IPv6</li>
+
+
+                </ul>
+                <!-- <h4>Schlüsselwörter: RDS+Skalierbar</h4>  -->
+            </div>
+            <div class="Schematik"  id="SE">
+                <h2>Grafische Erklärung</h2>
+                <!--------in scr komm adresse von Grafische erklärung Foto(foto darf nur in folder "Fotos" sein)---------->
+                <img src="./fotos/Application LoadBalancerGrafischeErklärung.webp" alt="schematische Erklärung" width="100%" height="auto">
+                <!-- <img src="./fotos/EC2-Spot.png" alt="schematische Erklärung" width="100%" height="auto"> -->
+            </div>
+            <div class="Frage"  id="PF">
+                <h2>Prüfung Fragen</h2>
+                <!-------------in <dt>+ soll frage geschrieben werden------------>
+                <dl><dt>Welche Routing-Methoden unterstützt der Application Load Balancer (ALB) von AWS?</dt></dl>
+                <ul class="F3">
+                    <input type="checkbox" id="v2" onclick="changeColor3(this)">
+                    <label for="v2">Nur DNS-basiertes Routing</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor3(this)">
+                    <label for="v3">Nur TCP-basiertes Routing</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor3(this)">
+                    <label for="v1">Anwendungsbasiertes Routing und Host-basiertes Routing</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor3(this)">
+                    <label for="v4">Nur IP-basiertes Routing</label><br>
+                </ul>
+                <dl><dt>Welche Vorteile bietet der Application Load Balancer (ALB) im Vergleich zum Classic Load Balancer von AWS?</dt></dl>
+                <!---------------in 4 <label> soll die antworten sein(richtige Antwort soll id ="v1" haben ------------>
+                <ul class="F1">
+                    <input type="checkbox" id="v2" onclick="changeColor1(this)">
+                    <label for="v2">Unterstützung für Layer-3-Routing</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor1(this)">
+                    <label for="v3">Automatische Skalierung der zugrunde liegenden EC2-Instanzen</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor1(this)">
+                    <label for="v1">Flexible Anwendung von Richtlinien für den Lastenausgleich auf Anwendungsebene</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor1(this)">
+                    <label for="v4">Integration mit AWS Lambda für serverlose Anwendungen</label><br>
+                </ul>
+                <dl><dt>Welche Arten von Überwachungsmetriken bietet der Application Load Balancer (ALB) für die Anwendungsleistung?</dt></dl>
+                <ul class="F2">
+                    <input type="checkbox" id="v2" onclick="changeColor2(this)">
+                    <label for="v2">Nur CPU-Auslastung der zugrunde liegenden EC2-Instanzen</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor2(this)">
+                    <label for="v1">Anzahl der aktiven Benutzerverbindungen</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor2(this)">
+                    <label for="v4">Antwortzeiten der Backend-Server</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor2(this)">
+                    <label for="v3">Status der Netzwerkverbindungen zu den Clients</label><br>
+                </ul>
+                <a href="https://aws-cpt.rungame.de/login" target="_black">für weitere Prüfungsfragen zum rungame</a>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="right">
+                  <div class="title">
+                    über uns
+                  </div>
+                  <div class="des">
+                    Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quaerat cumque. Mollitia, id labore? Voluptas deserunt possimus expedita maxime atque veritatis nisi, soluta ratione magni amet excepturi repudiandae sequi nemo molestias quod, rerum laboriosam ullam quaerat recusandae fugit doloribus odit, quia totam! Inventore, quas, eligendi possimus aut expedita ut tempore, repudiandae dignissimos itaque nostrum veniam minus autem dicta amet ducimus? ipsum, dolor sit amet consectetur adipisicing elit. Harum dolorum accusantium magni odio voluptatibus impedit sunt laborum maxime libero quaerat suscipit obcaecati accusamus rerum debitis esse quod fugit aliquam eaque blanditiis totam ab, ad incidunt voluptatem porro. Explicabo in eligendi placeat illo! Aliquam neque adipisci ducimus inventore ipsam nobis praesentium.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="left">
+                  <div class="title">
+                    folg uns 
+                  </div>
+                  <div class="socials">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-telegram-plane"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+                2024 Techfox ©
+            </div>
+          </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

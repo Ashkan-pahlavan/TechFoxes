@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/buchstaben.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+        <title>Techfox</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <!-----------in <h1> servic name---------->
+                <h1 style="text-shadow:4px 1px 4px rgba(5, 255, 113, 0.784) ;">CRR in S3</h1>
+                <small style="color: rgba(5, 255, 113, 0.784) ;">Cross-Region Replication</small>
+            </div>
+            <div class="nav-right">
+                <img src="./fotos/S3Icon.svg" alt="servic icon" width="100 px" height="100px">
+            </div>
+        </nav>       
+            <div>
+                <!--------in <h3> kutz erklärung----------->
+                <h3>AWS CRR repliziert Daten zwischen AWS-Regionen für Redundanz und Disaster Recovery.</h3>
+            </div>
+        <section id="navbar">
+            <!------------anfang 5 boton(nur zum wiessen)----------> 
+            <div class="springen">
+                <div class="icon1">
+                    <i><img src="./fotos/pencil-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#BS" title="erklärung über services">Beschreibung</a>
+                </div>
+            </div>
+            <div class="springen"> 
+                <div class="icon2">
+                    <i><img src="./fotos/wand-magic-sparkles-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SW" title="prüfung_hilfe">Schlüsselwörter</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon3">
+                    <i><img src="./fotos/image-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SE" title="Grafische Erklärung über diese servic">Grafik</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon4">
+                    <i><img src="./fotos/question-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#PF"  title="Beispiele prüfung Fragen">Question</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon5">
+                    <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html">gehe zu </a>
+                    <i><img src="./fotos/aws.svg" alt="servic icon" width="30 px" height="30px"></i>
+                </div>
+            </div>
+        </section>
+            <div class="AA">
+                <hr>
+                <br>
+            </div>
+    </header>
+        <main>
+            <div class="bschreibung" id="BS">
+                <h2>Beschreibung</h2>
+                <!-----------in <P> Lange erklärung----------->
+    
+                    <p>
+                        <b></b>Cross-Region Replication (CRR)</b> ist eine leistungsstarke <b>Funktion von Amazon S3</b>, die es Benutzern ermöglicht, Objekte
+                        automatisch <b>von einem Bucket in einer AWS-Region in einen anderen Bucket in einer anderen AWS-Region zu replizieren</b>.
+                        Diese Funktion bietet zahlreiche Vorteile, darunter <b>verbesserte Datensicherheit</b>, <b>erhöhte Redundanz über
+                            geografische Standorte hinweg</b> und die <b>Einhaltung von Notfallwiederherstellungs- und
+                            Compliance-Anforderungen</b>.
+                        <br><br>
+                        Durch die Aktivierung von <b>CRR</b> können Benutzer sicherstellen, dass ihre Daten an <b>mehreren geografisch entfernten
+                        Standorten</b> redundant gespeichert werden. Dies bietet eine zusätzliche Sicherheitsschicht, um Datenverluste aufgrund
+                        von Katastrophen oder Ausfällen zu verhindern. Darüber hinaus unterstützt <b>CRR</b> die <b>Einhaltung von
+                        Compliance-Anforderungen</b>, indem es sicherstellt, dass Daten gemäß den gesetzlichen Bestimmungen an mehreren
+                        Standorten gespeichert werden.
+                        <br><br>
+                        Die Konfiguration von <b>CRR</b> umfasst die Definition von Replikationsregeln für bestimmte Objekte in einem Bucket.
+                        Benutzer können festlegen, welche Objekte repliziert werden sollen und in welche Zielfelder sie repliziert werden
+                        sollen. Diese <b>Flexibilität</b> ermöglicht es Benutzern, ihre Replikationsstrategie an ihre spezifischen Anforderungen
+                        anzupassen und die Replikation nur für die erforderlichen Objekte durchzuführen.
+                        <br><br>
+                        Es ist wichtig anzumerken, dass <b>CRR</b> asynchron arbeitet, was bedeutet, dass die Replikation in Echtzeit oder mit
+                        einer bestimmten Verzögerung erfolgen kann, abhängig von den Netzwerk- und Konnektivitätsbedingungen. Dies
+                        ermöglicht eine flexible und <b>effiziente Replikation, ohne die Leistung oder Verfügbarkeit der S3-Buckets zu
+                        beeinträchtigen.</b>
+                        <br><br>
+                        Ein weiterer wichtiger Aspekt von <b>CRR</b> ist seine Fähigkeit, die Replikation zwischen Buckets zu unterstützen, <b>die
+                        demselben oder unterschiedlichen AWS-Konten gehören</b>. Dies bietet eine zusätzliche Flexibilität für Benutzer, ihre
+                        Daten zwischen verschiedenen Konten oder Organisationseinheiten zu replizieren, um ihre Anforderungen an
+                        Datenschutz, Compliance und Datenverfügbarkeit zu erfüllen.
+                        <br><br>
+                        Insgesamt ist <b>Cross-Region Replication </b>eine wichtige Funktion von Amazon S3, die es Benutzern ermöglicht, ihre Daten
+                        sicher und redundant über verschiedene geografische Standorte hinweg zu replizieren. Durch die Bereitstellung von
+                        <b>verbesserten Sicherheits-, Compliance- und Notfallwiederherstellungsfunktionen</b> trägt <b>CRR</b> dazu bei, die
+                        Integrität und Verfügbarkeit von Daten in AWS S3 zu gewährleisten.
+                    
+                    
+                    <ul>
+                        <li>Automatische Replikation von Objekten zwischen Buckets in verschiedenen AWS-Regionen.</li>
+                        <li>Vorteile: Verbesserte Datensicherheit, erhöhte Redundanz über geografische Standorte, Einhaltung von
+                            Notfallwiederherstellungs- und Compliance-Anforderungen.</li>
+                        <li>Sicherheit und Redundanz: Verhindert Datenverluste durch Replikation an entfernten Standorten.</li>
+                        <li>Compliance: Erfüllt gesetzliche Anforderungen durch Speicherung von Daten an mehreren Standorten.</li>
+                        <li>Konfiguration: Definition von Replikationsregeln für bestimmte Objekte, flexible Anpassung an spezifische
+                            Anforderungen.</li>
+                        <li>Asynchrone Replikation: Flexibilität bei der Replikation, abhängig von Netzwerk- und Konnektivitätsbedingungen.
+                        </li>
+                        <li>Unterstützung für verschiedene Konten: Replikation zwischen Buckets aus demselben oder unterschiedlichen
+                            AWS-Konten.</li>
+                        <li>Gesamtnutzen: Verbesserte Sicherheit, Compliance und Notfallwiederherstellungsfunktionen für AWS S3-Daten.</li>
+                    </ul>
+                     
+                </p>   
+
+                        
+                        
+                                
+                    
+                         
+                </div>
+            <div class="schlagworter"  id="SW">
+                <!-------------in <li> schlagwörter-------------->
+                <h2>Schlüsselwörter</h2>
+                <p>Schlüsselworte bzw. Schlagworte sollen uns dabei helfen, einen Service leichter zu erkennen, wenn es um Prüfungsfragen geht. Ließ dir die Fragen richtig durch und achte auf folgende Schlüsselworte. Sie können dir bei der Beantwortung der Fragen helfen.</p>
+                <ul>
+                    <li>Datenreplikation</li>
+                    <li>Datensicherheit</li>
+                    <li>Redundanz</li>
+                    <li>Disaster Recovery</li>
+                    <li>Hochverfügbarkeit</li>
+                    <li>Asynchroner Datenstrom</li>
+                    <li>Standortübergreifende Datenreplikation</li>
+                    <li>Automatisierte Replikation</li>
+                    <li>Latenzoptimierung</li>
+                    <li>Compliance-Anforderungen</li>
+                    
+                </ul>
+                <!-- <h4>Schlüsselwörter: RDS+Skalierbar</h4>  -->
+            </div>
+            <div class="Schematik"  id="SE">
+                <h2>Grafische Erklärung</h2>
+                <!--------in scr komm adresse von Grafische erklärung Foto(foto darf nur in folder "Fotos" sein)---------->
+                <img src="./fotos/CRRGrafischeErklärung.png" alt="schematische Erklärung" width="100%" height="auto">
+                <!-- <img src="./fotos/EC2-Spot.png" alt="schematische Erklärung" width="100%" height="auto"> -->
+            </div>
+            <div class="Frage"  id="PF">
+                <h2>Prüfung Fragen</h2>
+                <!-------------in <dt>+ soll frage geschrieben werden------------>
+                <dl><dt>Welche Voraussetzungen müssen erfüllt sein, um AWS Cross-Region Replication einzurichten?</dt></dl>
+                <ul class="F3">
+                    <input type="checkbox" id="v4" onclick="changeColor3(this)">
+                    <label for="v4">Die Regionen müssen sich geographisch in unmittelbarer Nähe zueinander befinden.</label><br>
+                    <input type="checkbox" id="v2" onclick="changeColor3(this)">
+                    <label for="v2">Es müssen dedizierte private Netzwerkleitungen zwischen den Regionen vorhanden sein.</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor3(this)">
+                    <label for="v1">Die verwendeten AWS-Services müssen die Funktion Cross-Region Replication unterstützen.</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor3(this)">
+                    <label for="v3">Es müssen spezielle IAM-Benutzer für die Replikation eingerichtet werden.</label><br>
+                </ul>
+                <dl><dt>Welcher AWS-Service ermöglicht die Cross-Region-Replikation?</dt></dl>
+                <!---------------in 4 <label> soll die antworten sein(richtige Antwort soll id ="v1" haben ------------>
+                <ul class="F1">
+                    <input type="checkbox" id="v2" onclick="changeColor1(this)">
+                    <label for="v2">AWS Lambda</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor1(this)">
+                    <label for="v4">AWS Route 53</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor1(this)">
+                    <label for="v3">AWS CloudFormation</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor1(this)">
+                    <label for="v1">AWS S3 (Simple Storage Service)</label><br>
+                </ul>
+                <dl><dt>Was passiert, wenn eine Quellressource, die für Cross-Region Replication konfiguriert ist, in einer AWS-Region gelöscht wird?</dt></dl>
+                <ul class="F2">
+                    <input type="checkbox" id="v2" onclick="changeColor2(this)">
+                    <label for="v2">Die Replikation wird automatisch gestoppt und muss manuell neu konfiguriert werden.</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor2(this)">
+                    <label for="v3">Die Replikationsdaten in der Zielregion bleiben erhalten, können aber nicht mehr aktualisiert werden.</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor2(this)">
+                    <label for="v4">Die Replikation wird automatisch in Echtzeit gestoppt und kann nicht wiederhergestellt werden.</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor2(this)">
+                    <label for="v1">Die Replikationsdaten in der Zielregion werden automatisch gelöscht, um die Konsistenz zu wahren.</label><br>
+                </ul>
+                <a href="https://aws-cpt.rungame.de/login" target="_black">für weitere Prüfungsfragen zum rungame</a>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="right">
+                  <div class="title">
+                    über uns
+                  </div>
+                  <div class="des">
+                    Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quaerat cumque. Mollitia, id labore? Voluptas deserunt possimus expedita maxime atque veritatis nisi, soluta ratione magni amet excepturi repudiandae sequi nemo molestias quod, rerum laboriosam ullam quaerat recusandae fugit doloribus odit, quia totam! Inventore, quas, eligendi possimus aut expedita ut tempore, repudiandae dignissimos itaque nostrum veniam minus autem dicta amet ducimus? ipsum, dolor sit amet consectetur adipisicing elit. Harum dolorum accusantium magni odio voluptatibus impedit sunt laborum maxime libero quaerat suscipit obcaecati accusamus rerum debitis esse quod fugit aliquam eaque blanditiis totam ab, ad incidunt voluptatem porro. Explicabo in eligendi placeat illo! Aliquam neque adipisci ducimus inventore ipsam nobis praesentium.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="left">
+                  <div class="title">
+                    folg uns 
+                  </div>
+                  <div class="socials">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-telegram-plane"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+                2024 Techfox ©
+            </div>
+          </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

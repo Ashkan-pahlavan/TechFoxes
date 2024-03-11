@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/buchstaben.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+        <title>Techfox</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <!-----------in <h1> servic name---------->
+                <h1 style="text-shadow:4px 1px 4px rgba(42, 190, 244, 0.784) ;"><b>AWS CMK</b></h1>
+                <small style="color: rgba(42, 190, 244, 0.784);">AWS KMS Customer Managed Key  </small>
+            </div>
+            <div class="nav-right">
+                <img src="./fotos/AWSCMKIcon.png" alt="servic icon" width="100 px" height="100px">
+            </div>
+        </nav>       
+            <div>
+                <!--------in <h3> kutz erklärung----------->
+                <h3> Ermöglicht die Verwaltung von kundeneigenen Verschlüsselungsschlüsseln in AWS.</h3>
+                <hr>
+            </div>
+        <section id="navbar">
+            <!------------anfang 5 boton(nur zum wiessen)----------> 
+            <div class="springen">
+                <div class="icon1">
+                    <i><img src="./fotos/pencil-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#BS" title="erklärung über services">Beschreibung</a>
+                </div>
+            </div>
+            <div class="springen"> 
+                <div class="icon2">
+                    <i><img src="./fotos/wand-magic-sparkles-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SW" title="prüfung_hilfe">Schlüsselwörter</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon3">
+                    <i><img src="./fotos/image-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SE" title="Grafische Erklärung über diese servic">Grafik</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon4">
+                    <i><img src="./fotos/question-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#PF"  title="Beispiele prüfung Fragen">Question</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon5">
+                    <a href="https://docs.aws.amazon.com/mgn/latest/ug/ebs-encryption-kms.html">gehe zu </a>
+                    <i><img src="./fotos/aws.svg" alt="servic icon" width="30 px" height="30px"></i>
+                </div>
+            </div>
+        </section>
+            <div class="AA">
+                <hr>
+                <br>
+            </div>
+    </header>
+        <main>
+            <div class="bschreibung" id="BS">
+                <h2>Beschreibung</h2>
+                <!-----------in <P> Lange erklärung----------->
+    
+        <p>
+            Ein vom Kunden verwalteter <b>CMK (Customer Master Key)</b> repräsentiert eine maßgebliche Entität innerhalb der
+            Sicherheitsarchitektur von AWS. Er ist eine sorgfältig konzipierte logische Einheit, die sowohl Metadaten als auch
+            Schlüsselmaterial umfasst und von Kunden eigenständig erstellt und gepflegt wird. Die Verwaltung dieser Schlüssel
+            obliegt dem Kunden, der die <b>volle Kontrolle über deren Nutzung und Zugriff</b> hat.<br><br>
+            
+            CMKs fungieren als Hauptkeys innerhalb der AWS-Infrastruktur und spielen eine zentrale Rolle beim <b>Verschlüsseln und
+                Entschlüsseln von Daten</b> in verschiedenen AWS-Diensten. Sie stellen eine <b>kritische Sicherheitskomponente</b>
+            dar, die sensible Informationen schützt und die Integrität vertraulicher Daten gewährleistet.<br><br>
+            
+            Eigenständige CMKs bilden eine spezifische Sammlung, die einem bestimmten AWS-Service zugeordnet ist und über mehrere
+            AWS-Konten hinweg genutzt werden kann. Diese <b>Flexibilität ermöglicht es Kunden, Sicherheitsrichtlinien und
+                Verschlüsselungsmechanismen konsistent über verschiedene Anwendungen und Umgebungen hinweg anzuwenden</b>, ohne die
+            Notwendigkeit, separate Schlüssel für jede Instanz zu erstellen.<br><br>
+            
+            Im Gegensatz dazu befinden sich AWS-eigene CMKs außerhalb des direkten Benutzerkontexts und können nicht direkt
+            angezeigt oder verwaltet werden. Sie dienen als <b>zugrunde liegende Infrastrukturkomponenten</b>, die von AWS-Diensten
+            intern genutzt werden, um eine robuste und hochsichere Umgebung bereitzustellen.<br><br>
+            
+            Durch die Verwendung von vom Kunden verwalteten CMKs können Organisationen die Sicherheit ihrer Daten und Anwendungen
+            auf AWS auf höchstem Niveau gewährleisten, während sie gleichzeitig die <b>volle Kontrolle über ihre
+                Verschlüsselungsschlüssel und deren Verwendung</b> behalten. Dies trägt dazu bei, <b>Compliance-Anforderungen zu
+                erfüllen, Risiken zu minimieren und das Vertrauen der Benutzer in die Sicherheit der bereitgestellten Dienste zu
+                stärken</b>.<br><br>
+            
+            <b>-Kundenverwalteter CMK (Customer Master Key):</b>Zentrale Sicherheitskomponente in AWS.<br><br>
+            -Volle Kontrolle durch den Kunden über Nutzung und Zugriff.<br><br>
+            -Schlüssel für Verschlüsselung und Entschlüsselung in AWS-Diensten.<br><br>
+            -Eigenständige CMKs für konsistente Sicherheitsrichtlinien über Anwendungen hinweg.<br><br>
+            -AWS-eigene CMKs dienen als interne Infrastrukturkomponenten.<br><br>
+            -Kundenverwaltete CMKs gewährleisten Sicherheit und Compliance.<br><br>
+            -Behalten der Kontrolle über Verschlüsselungsschlüssel und deren Verwendung.<br><br>
+            
+        </p>
+                  
+
+                        
+                        
+                                
+                    
+                         
+                </div>
+            <div class="schlagworter"  id="SW">
+                <!-------------in <li> schlagwörter-------------->
+                <h2>Schlüsselwörter</h2>
+                <p>Schlüsselworte bzw. Schlagworte sollen uns dabei helfen, einen Service leichter zu erkennen, wenn es um Prüfungsfragen geht. Ließ dir die Fragen richtig durch und achte auf folgende Schlüsselworte. Sie können dir bei der Beantwortung der Fragen helfen.</p>
+                <ul>
+                    <li>Verschlüsselungsschlüsselverwaltung</li>
+                    <li>Datenverschlüsselung</li>
+                    <li>Schlüsselerzeugung und -verwaltung</li>
+                    <li>Schlüsselrichtlinien</li>
+                    <li>Verschlüsselung von Daten in AWS</li>
+                    <li>Integration mit AWS-Diensten</li>
+                    <li>Schlüsselhierarchie</li>
+                    <li>Zugriffskontrolle auf verschlüsselte Daten</li>
+                    <li>KMS (Key Management Service)</li>
+                    <li>Schlüsselrotation</li>
+                    
+       
+                    
+                </ul>
+                <!-- <h4>Schlüsselwörter: RDS+Skalierbar</h4>  -->
+            </div>
+            <div class="Schematik"  id="SE">
+                <h2>Grafische Erklärung</h2>
+                <!--------in scr komm adresse von Grafische erklärung Foto(foto darf nur in folder "Fotos" sein)---------->
+                <img src="./fotos/AWSCMKGrafischeErklärung.png" alt="schematische Erklärung" width="100%" height="auto">
+                <!-- <img src="./fotos/EC2-Spot.png" alt="schematische Erklärung" width="100%" height="auto"> -->
+            </div>
+            <div class="Frage"  id="PF">
+                <h2>Prüfung Fragen</h2>
+                <!-------------in <dt>+ soll frage geschrieben werden------------>
+                <dl><dt>Was ist die Hauptfunktion eines AWS Customer Master Key (CMK)?</dt></dl>
+                <ul class="F3">
+                    <input type="checkbox" id="v4" onclick="changeColor3(this)">
+                    <label for="v4">Verwaltung von Benutzerzugriffsrechten auf AWS-Ressourcen.</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor3(this)">
+                    <label for="v3">Bereitstellung von verschlüsselten Sicherungskopien von Amazon S3-Buckets.</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor3(this)">
+                    <label for="v1">Verschlüsselung und Entschlüsselung von Daten in AWS-Diensten und Anwendungen.</label><br>
+                    <input type="checkbox" id="v2" onclick="changeColor3(this)">
+                    <label for="v2">Schutz vor Distributed Denial-of-Service (DDoS)-Angriffen auf AWS-Infrastruktur.</label><br>
+                </ul>
+                <dl><dt>Welche Art von Verschlüsselungsverfahren wird von einem AWS Customer Master Key (CMK) verwendet?</dt></dl>
+                <!---------------in 4 <label> soll die antworten sein(richtige Antwort soll id ="v1" haben ------------>
+                <ul class="F1">
+                    <input type="checkbox" id="v2" onclick="changeColor1(this)">
+                    <label for="v2">Symmetrische Verschlüsselung.</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor1(this)">
+                    <label for="v4">Asymmetrische Verschlüsselung.</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor1(this)">
+                    <label for="v3">Triple-DES (Data Encryption Standard).</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor1(this)">
+                    <label for="v1">Advanced Encryption Standard (AES).</label><br>
+                </ul>
+                <dl><dt>Wie können AWS-Kunden ihre eigenen Schlüssel für die Verwendung als AWS Customer Master Key (CMK) erstellen?</dt></dl>
+                <ul class="F2">
+                    <input type="checkbox" id="v2" onclick="changeColor2(this)">
+                    <label for="v2"> Durch den Kauf von physischen Sicherheitsmodulen (HSM) von AWS.</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor2(this)">
+                    <label for="v1">Durch die Erstellung von Schlüsseln mithilfe von AWS CloudHSM (Hardware Security Module).</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor2(this)">
+                    <label for="v3">Durch den Zugriff auf vordefinierte CMKs von AWS-KMS (Key Management Service).</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor2(this)">
+                    <label for="v4"> Durch die direkte Verwendung von AWS Access Keys in Anwendungen.</label><br>
+                </ul>
+                <a href="https://aws-cpt.rungame.de/login" target="_black">für weitere Prüfungsfragen zum rungame</a>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="right">
+                  <div class="title">
+                    über uns
+                  </div>
+                  <div class="des">
+                    Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quaerat cumque. Mollitia, id labore? Voluptas deserunt possimus expedita maxime atque veritatis nisi, soluta ratione magni amet excepturi repudiandae sequi nemo molestias quod, rerum laboriosam ullam quaerat recusandae fugit doloribus odit, quia totam! Inventore, quas, eligendi possimus aut expedita ut tempore, repudiandae dignissimos itaque nostrum veniam minus autem dicta amet ducimus? ipsum, dolor sit amet consectetur adipisicing elit. Harum dolorum accusantium magni odio voluptatibus impedit sunt laborum maxime libero quaerat suscipit obcaecati accusamus rerum debitis esse quod fugit aliquam eaque blanditiis totam ab, ad incidunt voluptatem porro. Explicabo in eligendi placeat illo! Aliquam neque adipisci ducimus inventore ipsam nobis praesentium.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="left">
+                  <div class="title">
+                    folg uns 
+                  </div>
+                  <div class="socials">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-telegram-plane"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+                2024 Techfox ©
+            </div>
+          </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
