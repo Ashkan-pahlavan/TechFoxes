@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/buchstaben.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+        <title>Techfox</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <!-----------in <h1> servic name---------->
+                <h1 style="text-shadow:4px 1px 4px rgb(255, 187, 0) ;">Consolidated Billing</h1>
+                <small style="color: rgb(255, 179, 0);">Konsolidierte Abrechnung</small>
+            </div>
+            <div class="nav-right">
+                <img src="./fotos/AWSICON.png" alt="servic icon" width="150 px" height="100px">
+            </div>
+        </nav>       
+            <div>
+                <!--------in <h3> kutz erklärung----------->
+                <h3>Funktion in AWS Organizations zur Abrechnungskonsolidierung</h3>
+                <hr>
+            </div>
+        <section id="navbar">
+            <!------------anfang 5 boton(nur zum wiessen)----------> 
+            <div class="springen">
+                <div class="icon1">
+                    <i><img src="./fotos/pencil-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#BS" title="erklärung über services">Beschreibung</a>
+                </div>
+            </div>
+            <div class="springen"> 
+                <div class="icon2">
+                    <i><img src="./fotos/wand-magic-sparkles-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SW" title="prüfung_hilfe">Schlüsselwörter</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon3">
+                    <i><img src="./fotos/image-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SE" title="Grafische Erklärung über diese servic">Grafik</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon4">
+                    <i><img src="./fotos/question-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#PF"  title="Beispiele prüfung Fragen">Question</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon5">
+                    <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html">gehe zu </a>
+                    <i><img src="./fotos/aws.svg" alt="servic icon" width="30 px" height="30px"></i>
+                </div>
+            </div>
+        </section>
+            <div class="AA">
+                <hr>
+                <br>
+            </div>
+    </header>
+        <main>
+            <div class="bschreibung" id="BS">
+                <h2>Beschreibung</h2>
+                <!-----------in <P> Lange erklärung----------->
+    
+                    <p>
+                        Die <b>konsolidierte Abrechnung</b> ermöglicht es Ihnen, die <b>Rechnungen verschiedener AWS-Konten in einer einzigen Rechnung
+                        zusammenzufassen </b>(ein Teil vom <b>Amazon Organizations</b>), was kleine Rabatte aktivieren kann. Diese Funktion ist
+                        besonders nützlich für <b>Organisationen mit mehreren AWS-Konten.</b><br><br>
+                        Mit der <b>konsolidierten Abrechnung</b> erhalten Sie eine kombinierte Ansicht der AWS-Kosten, die für alle Konten in Ihrer
+                        Abteilung oder Ihrem Unternehmen anfallen. Gleichzeitig erhalten Sie einen <b>detaillierten Kostenbericht</b> für jedes
+                        einzelne AWS-Konto, das mit Ihrem Zahlungskonto verknüpft ist. Dies ermöglicht eine effektive Kostenverfolgung und
+                        -analyse auf organisatorischer und Konto bezogener Ebene.<br><br>
+                        
+                        Die <b>konsolidierte Abrechnung</b> bietet auch die Möglichkeit, Gesamtkosten zu senken. Durch die Zusammenfassung der Nutzung
+                        aller Konten können Sie schneller zu <b>günstigeren Volumen-Stufen</b> gelangen. Dies ist besonders relevant für Dienste wie
+                        <b>Amazon EC2</b> und <b>Amazon S3</b>, bei denen Volumen Preisstufen basierend auf bestimmten Nutzungs-Dimensionen
+                        gelten.<br><br>
+                        
+                        Durch die <b>konsolidierte Abrechnung</b> kombiniert AWS die Nutzung aller Konten, um die anwendbaren Volumen-Preisstufen zu
+                        bestimmen, was zu potenziell niedrigeren Gesamtkosten führt.<br><br>
+                        
+                        Für Abrechnungszwecke behandelt AWS alle Konten in der Organisation so, als wären sie ein einziges Konto. Dies
+                        ermöglicht es, Volumenrabatte optimal zu nutzen. AWS weist anschließend jedem verknüpften Konto einen Teil des
+                        <b>Gesamtrabatts</b> zu, basierend auf der individuellen Nutzung des jeweiligen Kontos. Die konsolidierte Abrechnung bietet
+                        sowohl Transparenz als auch potenzielle Kosteneinsparungen in organisationsweitem Rahmen.<br><br></p>
+                        
+                        <ul>
+                            <li>Zusammenfassung von Rechnungen mehrerer AWS-Konten in einer einzigen Rechnung (Teil von Amazon Organizations)
+                            </li>
+                            <li>Kann kleine Rabatte aktivieren, besonders nützlich für Organisationen mit mehreren AWS-Konten</li>
+                            <li>Bietet kombinierte Ansicht der AWS-Kosten für alle Konten in der Abteilung oder dem Unternehmen</li>
+                            <li>Ermöglicht detaillierte Kostenberichte für jedes einzelne verknüpfte AWS-Konto</li>
+                            <li>Effektive Kostenverfolgung und -analyse auf organisatorischer und kontobezogener Ebene</li>
+                            <li>Senkt Gesamtkosten durch Zusammenfassung der Nutzung aller Konten, um zu günstigeren Volumenstufen zu gelangen
+                            </li>
+                            <li>Besonders relevant für Dienste wie Amazon EC2 und Amazon S3 mit Volumenpreisstufen basierend auf
+                                Nutzungsdimensionen</li>
+                            <li>AWS kombiniert Nutzung aller Konten, um anwendbare Volumenpreisstufen zu bestimmen, potenziell niedrigere
+                                Gesamtkosten</li>
+                            <li>Behandelt alle Konten in der Organisation für Abrechnungszwecke wie ein einziges Konto, um Volumenrabatte
+                                optimal zu nutzen</li>
+                            <li>Weist jedem verknüpften Konto einen Teil des Gesamtrabatts basierend auf individueller Nutzung zu</li>
+                            <li>Bietet Transparenz und potenzielle Kosteneinsparungen auf organisationsweitem Rahmen</li>
+                        </ul>
+                    
+                              
+                </div>
+            <div class="schlagworter"  id="SW">
+                <!-------------in <li> schlagwörter-------------->
+                <h2>Schlüsselwörter</h2>
+                <p>Schlüsselworte bzw. Schlagworte sollen uns dabei helfen, einen Service leichter zu erkennen, wenn es um Prüfungsfragen geht. Ließ dir die Fragen richtig durch und achte auf folgende Schlüsselworte. Sie können dir bei der Beantwortung der Fragen helfen.</p>
+                <ul>
+                    <li>Kostenkonsolidierung</li>
+                    <li>Zentrale Rechnungskonsolidierung</li>
+                    <li>Kostenaufteilung</li>
+                    <li>Verwaltung von mehreren AWS-Konten</li>
+                    <li>Single-Payer-Konto</li>
+                    <li>Vereinheitlichte Rechnungsansicht</li>
+                    <li>Kostenverwaltung für verschiedene Abteilungen oder Teams</li>
+                    <li>Kostentransparenz</li>
+                    <li>Ermöglichte konsolidierte Zahlungen</li>
+                    <li>Einfache Verwaltung von Kosten und Ausgaben</li>
+                    
+                        
+                </ul>
+                <!-- <h4>Schlüsselwörter: RDS+Skalierbar</h4>  -->
+            </div>
+            <div class="Schematik"  id="SE">
+                <h2>Grafische Erklärung</h2>
+                <!--------in scr komm adresse von Grafische erklärung Foto(foto darf nur in folder "Fotos" sein)---------->
+                <img src="./fotos/ConsolidatedBillingGrafischeErklärung.png" alt="schematische Erklärung" width="100%" height="auto">
+                <!-- <img src="./fotos/EC2-Spot.png" alt="schematische Erklärung" width="100%" height="auto"> -->
+            </div>
+            <div class="Frage"  id="PF">
+                <h2>Prüfung Fragen</h2>
+                <!-------------in <dt>+ soll frage geschrieben werden------------>
+                <dl><dt>Was ist AWS Konsolidierte Abrechnung (Consolidated Billing) und wie wird es in AWS verwendet?</dt></dl>
+                <ul class="F3">
+                    <input type="checkbox" id="v1" onclick="changeColor3(this)">
+                    <label for="v1">Es handelt sich um einen Mechanismus zur Konsolidierung mehrerer AWS-Konten zu einer einzigen Abrechnungseinheit, um eine zentralisierte Kostenverwaltung zu ermöglichen.</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor3(this)">
+                    <label for="v4">Es ist eine Funktion, die die Konsolidierung von EC2-Instanzen auf physischen Hosts zur Optimierung der Ressourcennutzung ermöglicht.</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor3(this)">
+                    <label for="v3">Es ist eine Sicherheitsrichtlinie, die den Zugriff auf AWS-Konten auf autorisierte Benutzer beschränkt.</label><br>
+                    <input type="checkbox" id="v2" onclick="changeColor3(this)">
+                    <label for="v2">Es ist ein AWS-Service, der die automatische Abrechnung von AWS-Ressourcennutzung ermöglicht, ohne dass manuelle Intervention erforderlich ist.</label><br>
+                </ul>
+                <dl><dt>Welche Vorteile bietet AWS Konsolidierte Abrechnung (Consolidated Billing) für Organisationen?</dt></dl>
+                <!---------------in 4 <label> soll die antworten sein(richtige Antwort soll id ="v1" haben ------------>
+                <ul class="F1">
+                    <input type="checkbox" id="v2" onclick="changeColor1(this)">
+                    <label for="v2">Es ermöglicht die Verwaltung von Ressourcen in isolierten Umgebungen, um Datenschutz und Compliance zu gewährleisten.</label><br>
+                    <input type="checkbox" id="v1"onclick="changeColor1(this)">
+                    <label for="v1">Es bietet Einsparungen durch die Nutzung von Mengenrabatten für aggregierte Ressourcennutzung.</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor1(this)">
+                    <label for="v4">Es erleichtert die Einrichtung getrennter AWS-Konten für jeden Geschäftsbereich zur einfacheren Kostenverwaltung.</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor1(this)">
+                    <label for="v3">Es ermöglicht die Integration von Drittanbieter-Abrechnungssystemen zur automatischen Erstellung von Rechnungen.</label><br>
+                </ul>
+                <dl><dt>Wie können Organisationen Kosten in AWS durch die Verwendung von Konsolidierter Abrechnung (Consolidated Billing) besser verwalten?</dt></dl>
+                <ul class="F2">
+                    <input type="checkbox" id="v2" onclick="changeColor2(this)">
+                    <label for="v2">Durch die automatische Zuordnung von Kosten zu einzelnen Benutzern innerhalb einer Organisation.</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor2(this)">
+                    <label for="v1">Durch die Konsolidierung von Abrechnungsinformationen aus mehreren AWS-Konten für eine umfassende Analyse.</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor2(this)">
+                    <label for="v3">Durch die Einführung von Pay-as-you-go-Preismodellen für die Nutzung von AWS-Ressourcen.</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor2(this)">
+                    <label for="v4">Durch die Begrenzung der Ressourcennutzung auf einzelne AWS-Konten, um Ausgaben im Voraus zu planen.</label><br>
+                </ul>
+                <a href="https://aws-cpt.rungame.de/login" target="_black">für weitere Prüfungsfragen zum rungame</a>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="right">
+                  <div class="title">
+                    über uns
+                  </div>
+                  <div class="des">
+                    Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quaerat cumque. Mollitia, id labore? Voluptas deserunt possimus expedita maxime atque veritatis nisi, soluta ratione magni amet excepturi repudiandae sequi nemo molestias quod, rerum laboriosam ullam quaerat recusandae fugit doloribus odit, quia totam! Inventore, quas, eligendi possimus aut expedita ut tempore, repudiandae dignissimos itaque nostrum veniam minus autem dicta amet ducimus? ipsum, dolor sit amet consectetur adipisicing elit. Harum dolorum accusantium magni odio voluptatibus impedit sunt laborum maxime libero quaerat suscipit obcaecati accusamus rerum debitis esse quod fugit aliquam eaque blanditiis totam ab, ad incidunt voluptatem porro. Explicabo in eligendi placeat illo! Aliquam neque adipisci ducimus inventore ipsam nobis praesentium.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="left">
+                  <div class="title">
+                    folg uns 
+                  </div>
+                  <div class="socials">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-telegram-plane"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+                2024 Techfox ©
+            </div>
+          </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
