@@ -1,0 +1,373 @@
+/* ---------------------------algemein--------------------- */
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-size: 16px ;
+    margin: 0px;
+    background-color: #636e72;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    text-shadow:  10px 5px 15px rgba(94, 175, 187, 0.413);
+}
+h2{
+    padding-left: 20px;
+    font-size: 2em;
+}
+
+/* }
+main .schlagworter h4{
+    color: #000000;
+} */
+h4 {
+    padding-left: 30px;
+    color: white;
+}
+/* -------------------------- header---------------------------- */
+header{
+    background-image: url(../fotos/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .AA hr{
+    margin-bottom: 40px;
+} */
+header nav{
+    color: white;
+    display: flex;
+    padding: 50px 50px;
+}
+header h3{
+    padding-left: 20px;
+    color: rgb(188, 188, 184);
+    font-size: 1.4em;
+}
+header nav .nav-left{
+    text-shadow: 10px 1px 1px 1px rgba(94, 175, 187, 0.413);
+    font-size: 30px;
+}
+header nav .nav-right{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+p{
+    padding: 0px 30px;
+}
+
+/* ----------------------header / selection------------------------- */
+/* header section{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    margin-left: -104.5px; /*104.5px is half of the button's width*/
+    /* display: block;
+    justify-content: space-evenly;
+    padding: 15px 50px;
+    font-size: 1.4em;
+    size: auto;
+} */ 
+/* section {
+    height: 1500px; /* Ein Dummy-Inhalt, um das Scrollen zu simulieren 
+} */
+
+header section{
+    top: 20px;
+    position: static;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 50px;
+    font-size: 1.4em;
+    size: auto; 
+    transition : 1.2s ;
+}
+
+header section.move-right{
+    top: 400px;
+    right: 20px;
+    bottom: 20px;
+    margin-left: -104.5px; /*104.5px is half of the button's width*/
+    display: block;
+    justify-content: space-evenly;
+    padding: 15px 50px;
+    font-size: 1.4em;
+    size: auto;
+    position: fixed;
+    z-index: 999;
+    animation: mymove 5s infinite;
+    transition: all 1.8s ease;
+}
+
+/* ..........Beschreiben......... */
+header .springen .icon1{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    background-color: #1374bfba;
+    /* box-shadow: 10px -10px 10px 0px rgba(94, 175, 187, 0.413); */
+    transition : 0.35s;
+    justify-content: center;
+    align-items: center;
+}
+header .springen .icon1:hover {
+    background-color: gold;
+}
+header .springen .icon1 a{
+    color:rgb(249, 250, 250);
+    padding: 5px 0px;
+    margin: 0px 10px;
+}
+header section .springen .icon1 i{
+   padding-left: 5px;
+}
+/* .............schlagwörter.......... */
+header .springen .icon2{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    background-color: #035c16c0;
+    /* box-shadow: 10px -10px 10px 0px rgba(94, 175, 187, 0.413); */
+    transition : 0.35s;
+    justify-content: center;
+    align-items: center;
+}
+header .springen .icon2:hover {
+    background-color: gold;
+}
+header .springen .icon2 a{
+    color:rgb(249, 250, 250);
+    padding: 5px 0px;
+    margin: 0px 10px;
+}
+header section .springen .icon2 i{
+   padding-left: 5px;
+}
+/* ...............Grafisch.............*/
+header .springen .icon3{
+    border: 2px solid white;
+    padding: 5px 30px;
+    border-radius: 15px;
+    display: flex;
+    background-color: #3e0279b6;
+    /* box-shadow: 10px -10px 10px 0px rgba(94, 175, 187, 0.413); */
+    transition : 0.35s;
+    justify-content: center;
+    align-items: center;
+}
+header .springen .icon3:hover {
+    background-color: gold;
+}
+header .springen .icon3 a{
+    color:rgb(249, 250, 250);
+    padding: 5px 0px;
+    margin: 0px 10px;
+}
+header section .springen .icon3 i{
+   padding-left: 5px;
+}
+/* ................question............... */
+header .springen .icon4{
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: flex;
+    background-color: #046873b7;
+    /* box-shadow: 10px -10px 10px 0px rgba(94, 175, 187, 0.413); */
+    transition : 0.35s;
+    justify-content: center;
+    align-items: center;
+}
+header .springen .icon4:hover {
+    background-color: gold;
+}
+header .springen .icon4 a{
+    color:rgb(249, 250, 250);
+    padding: 5px 0px;
+    margin: 0px 10px;
+}
+header section .springen .icon4 i{
+   padding-left: 5px;
+}
+/*.................zu AWS................. */
+header .springen .icon5{
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: flex;
+    background-color: #bf1313b5;
+    /* box-shadow: 10px -10px 10px 0px rgba(94, 175, 187, 0.413); */
+    transition : 0.35s;
+    justify-content: center;
+    align-items: center;
+}
+header .springen .icon5:hover {
+    background-color: gold;
+}
+header .springen .icon5 a{
+    color:rgb(249, 250, 250);
+    padding: 5px 0px;
+    margin: 0px 10px;
+}
+header section .springen .icon5 i{
+   padding-left: 5px;
+}
+/* header .springen .icon1{
+    color: white;
+    background-color: aqua;
+} */
+/* -----------------------------main-------------------------------- */
+main .bschreibung{
+    background-image: url(../fotos/DD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000000;
+    border: 8px solid #1374bfd3;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+main .schlagworter{
+    font-size: 1.5em;
+    background-image: url(../fotos/gggg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+    color: rgb(255, 255, 255);
+    border: 8px solid #035c16d3;
+    padding: 20px;
+    border-radius: 40px;
+}
+/* main .schlagworter::after {
+    opacity: 0.5; Transparenz des Überlagerungselements 
+} */
+main .schlagworter h2{
+    font-size: 1.7em;
+    color: #58ac6a;
+}
+main .schlagworter p{
+    font-size: .7em;
+    color: #adc8b3;
+}
+main .schlagworter li{
+    padding: 5px 5px 20px 10px;
+}
+main .Schematik{
+    background-image: url(../fotos/BGF.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #8b47cff8;
+    border: 8px solid #3d0279d3;
+    padding: 20px;
+    border-radius: 40px;
+}
+main .Schematik h2{
+    font-size: 2.2em;
+}
+main .Frage{
+    font-size: 1.4em;
+    background-image: url(../fotos/TTT.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    border: 8px solid #046873d3;
+    padding: 20px;
+    border-radius: 40px;
+}
+main .Frage h2{
+    color: #bbbbbb;
+}
+main .Frage a{
+    color: white;
+    font-size: 1.5em;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    background-color: #0b9eae;
+    /* box-shadow: 10px -10px 10px 0px rgba(94, 175, 187, 0.413); */
+    transition : 0.35s;
+    justify-content: center;
+    align-items: center;
+}
+main .Frage a:hover {
+    background-color: gold;
+}
+main article .AA{
+    background-color: rgb(181, 191, 201);
+}
+/* ------------------------------------footer---------------------------  */
+footer{
+    background-color: #636e72;
+    font-size: 1em;
+}
+footer .row{
+    display: flex;
+    justify-content: space-between ;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+footer .right{
+    padding: 10px 10px 10px 10px;
+}
+footer .right .title{
+    padding: 10px 0px;
+    color: white;
+    font-size: 1.2em;
+}
+footer .right  .des{
+    color: rgba(255, 255, 255, .7);
+    line-height: 1.9em;
+    font-size: .9em;
+}
+footer .left{
+    padding: 10px 100px 10px 100px;
+}
+footer .left .title{
+    padding: 30px 0px;
+    font-size: 1.2em;
+    color: white;
+}
+footer .left .socials{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+footer .left .socials a{
+    padding: 20px;
+    color: rgb(4, 184, 220);
+    font-size: 1.4em;
+}
+footer .bottom{
+    font-size: 1.5em;
+    background-color: #2d3436;
+    text-align: center;
+    padding: 15px;
+    color: rgba(255, 255, 255, .9);
+}
+input[type="checkbox"]:checked {
+    background-color: rgb(5, 63, 105);
+}
+.green-text {
+    color: rgb(48, 177, 48);
+    font-size: 1.2em;;
+}
+
+.red-text {
+    color: rgb(216, 71, 71);
+    text-decoration: line-through;
+    font-size: 0.9em;
+}
+dt{
+    color: #84f7ff;
+}

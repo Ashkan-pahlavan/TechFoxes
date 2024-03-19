@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/buchstaben.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+        <title>Techfox</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <!-----------in <h1> servic name---------->
+                <h1 style="text-shadow:4px 1px 4px rgba(132, 0, 255, 0.784) ;">AWS ELB</h1>
+                <small style="color: rgba(132, 0, 255, 0.784);">Elastic Load Balancing</small>
+            </div>
+            <div class="nav-right">
+                <img src="./fotos/AWSElasticLoadBalancerIcon.webp" alt="servic icon" width="100 px" height="100px">
+            </div>
+        </nav>       
+            <div>
+                <!--------in <h3> kutz erklärung----------->
+                <h3></h3>
+                <hr>
+            </div>
+        <section id="navbar">
+            <!------------anfang 5 boton(nur zum wiessen)----------> 
+            <div class="springen">
+                <div class="icon1">
+                    <i><img src="./fotos/pencil-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#BS" title="erklärung über services">Beschreibung</a>
+                </div>
+            </div>
+            <div class="springen"> 
+                <div class="icon2">
+                    <i><img src="./fotos/wand-magic-sparkles-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SW" title="prüfung_hilfe">Schlüsselwörter</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon3">
+                    <i><img src="./fotos/image-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SE" title="Grafische Erklärung über diese servic">Grafik</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon4">
+                    <i><img src="./fotos/question-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#PF"  title="Beispiele prüfung Fragen">Question</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon5">
+                    <a href="https://aws.amazon.com/de/elasticloadbalancing/">gehe zu </a>
+                    <i><img src="./fotos/aws.svg" alt="servic icon" width="30 px" height="30px"></i>
+                </div>
+            </div>
+        </section>
+            <div class="AA">
+                <hr>
+                <br>
+            </div>
+    </header>
+        <main>
+            <div class="bschreibung" id="BS">
+                <h2>Beschreibung</h2>
+                <!-----------in <P> Lange erklärung----------->
+    
+                    <p><b>AWS Elastic Load Balancing</b> ist ein äußerst leistungsfähiger Dienst von Amazon Web Services (AWS), der
+                        automatisch den eingehenden Anwendungsverkehr auf alle laufenden EC2-Instanzen verteilt. Dieser Dienst ist von
+                        entscheidender Bedeutung für die Optimierung der Steuerung des Verkehrs, um Überlastungen zu vermeiden und eine
+                        gleichmäßige Verteilung der Last auf die verfügbaren Ressourcen sicherzustellen. Der Lastenausgleich dient als
+                        zentraler Punkt für den eingehenden Webverkehr und spielt eine entscheidende Rolle bei der Bereitstellung einer
+                        hochverfügbaren und skalierbaren Infrastruktur für Webanwendungen.<br><br>
+                        Bei der Verwendung von <b>AWS Elastic Load Balancing</b> müssen neue EC2-Instanzen sich beim Lastenausgleicher
+                        registrieren, während entfernte Instanzen sich abmelden müssen, um den Verkehr effektiv zu steuern. Dieser
+                        automatische Vorgang gewährleistet eine kontinuierliche und dynamische Anpassung an Änderungen in der
+                        Anwendungslandschaft, was wiederum eine optimale Leistung und Verfügbarkeit der Anwendungen sicherstellt.<br><br>
+                    
+                        <b>Elastic Load Balancing</b> kann sowohl für den klassischen Lastenausgleich als auch für den Anwendungs- oder
+                        Netzwerklastenausgleich konfiguriert werden, je nach den spezifischen Anforderungen Ihrer Anwendung. Dies ermöglicht
+                        eine flexible und anpassungsfähige Konfiguration, um den individuellen Bedürfnissen verschiedener Anwendungsfälle
+                        gerecht zu werden.<br><br>
+                    
+                        Die automatische Verteilung des Verkehrs durch <b>AWS Elastic Load Balancing</b> ist von entscheidender Bedeutung,
+                        um die Last auf die verfügbaren EC2-Instanzen gleichmäßig zu verteilen und eine optimale Leistung sowie
+                        Verfügbarkeit sicherzustellen. Durch die dynamische Anpassung an Änderungen in der Anwendungslandschaft stellt
+                        <b>AWS Elastic Load Balancing</b> sicher, dass der Verkehr effizient und zuverlässig auf die verfügbaren Ressourcen
+                        geleitet wird. Dies trägt wesentlich dazu bei, eine hochgradig skalierbare und hochverfügbare Umgebung für
+                        Anwendungen in der AWS-Cloud bereitzustellen und den Nutzern ein herausragendes Erlebnis zu bieten.<br><br>
+                    
+                        Die <b>AWS Load Balancer-Services</b> und <b>Auto Scaling</b> können nahtlos zusammenarbeiten, um die Skalierbarkeit
+                        und Verfügbarkeit Ihrer Anwendungen in der AWS-Cloud zu verbessern. Hier ist, wie sie zusammenarbeiten:<br><br>
+                    
+                        <b>Auto Scaling-Gruppen und Load Balancer:</b>
+                        Sie können <b>Auto Scaling-Gruppen</b> mit <b>Load Balancern</b> verknüpfen, um eine dynamische Skalierung Ihrer
+                        Anwendung basierend auf der Auslastung zu ermöglichen. Wenn die Belastung zunimmt, startet Auto Scaling automatisch
+                        neue
+                        Instanzen Ihrer Anwendung, und diese werden dem Load Balancer hinzugefügt, um den eingehenden Traffic zu
+                        verteilen.<br><br>
+                    
+                        <b>Health Checks:</b>
+                        Die <b>Load Balancer</b> führen Gesundheitsprüfungen an den Instanzen durch, um sicherzustellen, dass nur gesunde
+                        Instanzen Verkehr erhalten. Wenn eine Instanz als nicht gesund identifiziert wird (z. B. aufgrund eines Fehlers oder
+                        eines Absturzes), entfernt der Load Balancer sie aus dem Pool der verfügbaren Instanzen. <b>Auto Scaling</b> kann
+                        dann
+                        eine neue Instanz starten, um die Kapazität aufrechtzuerhalten.<br><br>
+                    
+                        <b>Integration mit Auto Scaling-Policies:</b>
+                        <b>Auto Scaling</b> verwendet Richtlinien zur Steuerung der Skalierung Ihrer Anwendung. Diese Richtlinien können auf
+                        verschiedene Metriken basieren, wie z. B. CPU-Auslastung, Speicherauslastung oder Netzwerklast. Wenn eine Metrik
+                        einen
+                        vordefinierten Schwellenwert überschreitet, wird die Auto Scaling-Gruppe entsprechend der Richtlinie skaliert, indem
+                        entweder Instanzen hinzugefügt oder entfernt werden. Die Integration mit Load Balancern stellt sicher, dass neue
+                        Instanzen automatisch dem Load Balancer hinzugefügt werden, um den Traffic zu bewältigen.<br><br>
+                    
+                        <b>Application Load Balancer und Network Load Balancer:</b>
+                        AWS bietet verschiedene Arten von Load Balancern an, darunter <b>Application Load Balancer (ALB)</b> und <b>Network
+                            Load
+                            Balancer (NLB)</b>. Diese können je nach den Anforderungen Ihrer Anwendung verwendet werden. Zum Beispiel ist
+                        ALB
+                        für Anwendungen mit HTTP- und HTTPS-Traffic geeignet, während NLB für TCP-, UDP- und TLS-Traffic verwendet werden
+                        kann.<br><br>
+                    
+                        Insgesamt ermöglicht die Integration von <b>Auto Scaling</b> und <b>Load Balancer-Services</b> von AWS eine
+                        automatisierte und elastische Skalierung Ihrer Anwendungen, um mit variabler Nachfrage umzugehen und gleichzeitig
+                        eine
+                        hohe Verfügbarkeit sicherzustellen.
+                    </p>
+                    
+                    <ul>
+                        <li><b>Klassischer Lastenausgleich (Classic Load Balancer):</b>
+                            <ul>
+                                <li>Älterer Typ von Lastenausgleich in AWS.</li>
+                                <li>Verteilt den Datenverkehr gleichmäßig auf alle verfügbaren EC2-Instanzen in einer Region.</li>
+                                <li>Unterstützt sowohl den HTTP- als auch den TCP-Verkehr.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><b>Anwendungs-Lastenausgleich (Application Load Balancer - ALB):</b>
+                            <ul>
+                                <li>Aktiv auf der Anwendungsebene und ermöglicht das Routen von Datenverkehr basierend auf Inhalten.</li>
+                                <li>Bietet fortschrittliche Funktionen wie Host-basiertes Routing und Unterstützung für WebSockets.</li>
+                                <li>Geeignet für moderne Anwendungen und Mikroservices.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><b>Netzwerk-Lastenausgleich (Network Load Balancer - NLB):</b>
+                            <ul>
+                                <li>Agiert auf der Netzwerkebene und verteilt den Datenverkehr basierend auf IP-Adressen und Ports.</li>
+                                <li>Eignet sich besonders für TCP- und UDP-Verkehr mit extrem niedriger Latenz.</li>
+                                <li>Skaliert gut und kann Millionen von Anfragen pro Sekunde verarbeiten.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><b>Gateway-Lastenausgleich (Gateway Load Balancer):</b>
+                            <ul>
+                                <li>Wird verwendet, um den eingehenden und ausgehenden Datenverkehr für VPNs, Direct Connect und andere
+                                    Netzwerkapplikationen zu balancieren.</li>
+                                <li>Bietet skalierbare, hochverfügbare und leistungsstarke Gateway-Services.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><b>TLS-Lastenausgleich (TLS/SSL Load Balancer):</b>
+                            <ul>
+                                <li>Gewährleistet die sichere Verschlüsselung und Entschlüsselung des TLS/SSL-Verkehrs.</li>
+                                <li>Unterstützt die Offloading von TLS/SSL-Protokollen, um die Belastung von Webservern zu reduzieren.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                    
+                    <ul>
+                        <li>Automatische Verteilung des Anwendungsverkehrs auf EC2-Instanzen.</li>
+                        <li>Vermeidung von Überlastung und Optimierung des Verkehrsflusses.</li>
+                        <li>Zentraler Punkt für eingehenden Webverkehr; Registrierung/Abmeldung von EC2-Instanzen.</li>
+                        <li>Lastverteilung auf verfügbare EC2-Instanzen für optimale Leistung.</li>
+                        <li>Konfiguration für klassischen, Anwendungs- oder Netzwerklastenausgleich.</li>
+                        <li>Dynamische Anpassung an Änderungen für effiziente Verkehrslenkung.</li>
+                    </ul>
+                    
+                    <ul>
+                        <li><b>Classic Load Balancer (ELB):</b> Gleichmäßige Verteilung, unterstützt HTTP/TCP.</li>
+                        <li><b>Anwendungs-Lastenausgleich (ALB):</b> Routen des Verkehrs auf Anwendungsebene, WebSockets.</li>
+                        <li><b>Netzwerk-Lastenausgleich (NLB):</b> Verteilung basierend auf IP/Ports, für TCP/UDP.</li>
+                        <li><b>Gateway-Lastenausgleich:</b> Balancierung von eingehendem/ausgehendem Datenverkehr.</li>
+                        <li><b>TLS-Lastenausgleich:</b> Sichere TLS/SSL-Verschlüsselung/Entschlüsselung, Offloading zur Reduzierung der
+                            Serverlast.</li>
+                    </ul>
+                    
+                    <p>  
+                     Die Auswahl des geeigneten Load Balancers hängt von den spezifischen Anforderungen Ihrer Anwendung ab, einschließlich Traffic, der gewünschten Skalierbarkeit und den erforderlichen Funktionen.
+                    </p>
+                    
+
+                    <ul>
+                        <li><strong>Elastic Load Balancing (ELB):</strong> Ein verteilter Lastenausgleichsdienst, der den Datenverkehr auf
+                            mehrere Zielinstanzen verteilt.</li>
+                        <li><strong>Application Load Balancer (ALB):</strong> Ein Layer-7-Lastenausgleichsdienst, der den HTTP- und
+                            HTTPS-Verkehr auf der Anwendungsebene routet.</li>
+                        <li><strong>Network Load Balancer (NLB):</strong> Ein Layer-4-Lastenausgleichsdienst, der den TCP-, UDP- und
+                            TLS-Verkehr auf der Netzwerkebene routet.</li>
+                        <li><strong>Gateway Load Balancer (GWLB):</strong> Ein skalierbarer und verwalteter Lastenausgleichsdienst, der
+                            speziell für Anwendungen mit hoher Bandbreite und hoher Anzahl von Verbindungen entwickelt wurde.</li>
+                        <li><strong>Classic Load Balancer (CLB):</strong> Ein älterer Lastenausgleichsdienst von AWS, der auf der
+                            Netzwerkebene und der Transportebene (Layer 4) arbeitet.</li>
+                    </ul>  
+                        
+                    
+                              
+                </div>
+            <div class="schlagworter"  id="SW">
+                <!-------------in <li> schlagwörter-------------->
+                <h2>Schlüsselwörter</h2>
+                <p>Schlüsselworte bzw. Schlagworte sollen uns dabei helfen, einen Service leichter zu erkennen, wenn es um Prüfungsfragen geht. Ließ dir die Fragen richtig durch und achte auf folgende Schlüsselworte. Sie können dir bei der Beantwortung der Fragen helfen.</p>
+                <ul>
+                    <li>Verteilter Lastenausgleichsdienst</li>
+                    <li>Automatische Verteilung des Datenverkehrs</li>
+                    <li>Skalierbarkeit und Hochverfügbarkeit</li>
+                    <li>Unterstützung für verschiedene Protokolle (HTTP, HTTPS, TCP, UDP)</li>
+                    <li>Integration mit Auto Scaling</li>
+                    <li>TLS-Terminierung und Verschlüsselung</li>
+                    <li>Gesundheitsüberwachung von Zielinstanzen</li>
+                    <li>Lastausgleich basierend auf Anwendungsschicht (Application Load Balancer)</li>
+                    <li>Lastausgleich basierend auf Netzwerkschicht (Network Load Balancer)</li>
+                    <li>Integration mit AWS-WEB Application Firewall (WAF)</li>
+                                    
+                </ul>
+                <!-- <h4>Schlüsselwörter: RDS+Skalierbar</h4>  -->
+            </div>
+            <div class="Schematik"  id="SE">
+                <h2>Grafische Erklärung</h2>
+                <!--------in scr komm adresse von Grafische erklärung Foto(foto darf nur in folder "Fotos" sein)---------->
+                <img src="./fotos/AWSElasticLoadBalancerGrafischeErklärung.png" alt="schematische Erklärung" width="100%" height="auto">
+                <!-- <img src="./fotos/EC2-Spot.png" alt="schematische Erklärung" width="100%" height="auto"> -->
+            </div>
+            <div class="Frage"  id="PF">
+                <h2>Prüfung Fragen</h2>
+                <!-------------in <dt>+ soll frage geschrieben werden------------>
+                <dl><dt>Welche Strategien können Unternehmen implementieren, um die Leistung und Skalierbarkeit von AWS Elastic Load Balancing zu optimieren, insbesondere für hochverfügbare Anwendungen?</dt></dl>
+                <ul class="F3">
+                    <input type="checkbox" id="v3" onclick="changeColor3(this)">
+                    <label for="v3">Durch die Verwendung von Network Load Balancer (NLB) für geringe Latenzzeiten und hohe Durchsatzraten.</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor3(this)">
+                    <label for="v4">Durch die Integration von Elastic Load Balancers mit AWS Direct Connect zur Minimierung von Latenzzeiten und Netzwerküberlastungen.</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor3(this)">
+                    <label for="v1">Durch die Konfiguration von Cross-Zone-Load-Balancing für gleichmäßige Lastverteilung und erhöhte Ausfallsicherheit.</label><br>
+                    <input type="checkbox" id="v2" onclick="changeColor3(this)">
+                    <label for="v2">Durch die Implementierung von Application Load Balancer (ALB) für eine granulare Steuerung des Datenverkehrs auf Anwendungsebene.</label><br>
+                </ul>
+                <dl><dt>Wie unterstützt AWS Elastic Load Balancing Unternehmen bei der Bereitstellung von Anwendungen in mehreren AWS-Regionen für globale Benutzer?</dt></dl>
+                <!---------------in 4 <label> soll die antworten sein(richtige Antwort soll id ="v1" haben ------------>
+                <ul class="F1">
+                    <input type="checkbox" id="v4" onclick="changeColor1(this)">
+                    <label for="v4">Durch die automatische Skalierung von Load Balancers basierend auf dem globalen Traffic-Volumen.</label><br>
+                    <input type="checkbox" id="v2"onclick="changeColor1(this)">
+                    <label for="v2">Durch die Verwendung von AWS CloudFront zur Integration von Content Delivery Networks (CDN) mit Load Balancern.</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor1(this)">
+                    <label for="v1">Durch die Konfiguration von Multi-Region-Load-Balancing zur Verteilung des Datenverkehrs auf Anwendungsserver in verschiedenen Regionen.</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor1(this)">
+                    <label for="v3">Durch die Implementierung von AWS Global Accelerator zur Beschleunigung von Datenübertragungen zwischen Regionen.</label><br>
+                </ul>
+                <dl><dt>Welche Vorteile bietet die Verwendung von AWS Network Load Balancer (NLB) im Vergleich zu den anderen Load Balancer-Typen?</dt></dl>
+                <ul class="F2">
+                    <input type="checkbox" id="v1" onclick="changeColor2(this)">
+                    <label for="v1">NLB bietet die niedrigste Latenzzeit und die höchste Netzwerkleistung für TCP-basierten Traffic.</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor2(this)">
+                    <label for="v3">NLB bietet integrierte Tools zur Analyse von Anwendungsleistungsdaten und zur Fehlerbehebung.</label><br>
+                    <input type="checkbox" id="v2" onclick="changeColor2(this)">
+                    <label for="v2">NLB ermöglicht die nahtlose Integration mit AWS WAF (Web Application Firewall) zur Absicherung von Webanwendungen.</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor2(this)">
+                    <label for="v4">NLB bietet integrierte SSL/TLS-Verschlüsselung für die sichere Übertragung von Daten zwischen Clients und Anwendungen.</label><br>
+                </ul>
+                <a href="https://aws-cpt.rungame.de/login" target="_black">für weitere Prüfungsfragen zum rungame</a>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="right">
+                  <div class="title">
+                    über uns
+                  </div>
+                  <div class="des">
+                    Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quaerat cumque. Mollitia, id labore? Voluptas deserunt possimus expedita maxime atque veritatis nisi, soluta ratione magni amet excepturi repudiandae sequi nemo molestias quod, rerum laboriosam ullam quaerat recusandae fugit doloribus odit, quia totam! Inventore, quas, eligendi possimus aut expedita ut tempore, repudiandae dignissimos itaque nostrum veniam minus autem dicta amet ducimus? ipsum, dolor sit amet consectetur adipisicing elit. Harum dolorum accusantium magni odio voluptatibus impedit sunt laborum maxime libero quaerat suscipit obcaecati accusamus rerum debitis esse quod fugit aliquam eaque blanditiis totam ab, ad incidunt voluptatem porro. Explicabo in eligendi placeat illo! Aliquam neque adipisci ducimus inventore ipsam nobis praesentium.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="left">
+                  <div class="title">
+                    folg uns 
+                  </div>
+                  <div class="socials">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-telegram-plane"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+                2024 Techfox ©
+            </div>
+          </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

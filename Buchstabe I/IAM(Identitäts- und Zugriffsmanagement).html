@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/buchstaben.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+        <title>Techfox</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <!-----------in <h1> servic name---------->
+                <h1 style="text-shadow:4px 1px 4px rgba(255, 0, 0, 0.784) ;">AWS IAM</h1>
+                <small style="color: rgba(255, 0, 0, 0.784);">Identity and Access Management</small>
+            </div>
+            <div class="nav-right">
+                <img src="./fotos/IAMIcon.webp" alt="servic icon" width="100 px" height="100px">
+            </div>
+        </nav>       
+            <div>
+                <!--------in <h3> kutz erklärung----------->
+                <h3>Sichere Verwaltung der Identitäten und des Zugriffs auf AWS-Services und -Ressourcen</h3>
+                <hr>
+            </div>
+        <section id="navbar">
+            <!------------anfang 5 boton(nur zum wiessen)----------> 
+            <div class="springen">
+                <div class="icon1">
+                    <i><img src="./fotos/pencil-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#BS" title="erklärung über services">Beschreibung</a>
+                </div>
+            </div>
+            <div class="springen"> 
+                <div class="icon2">
+                    <i><img src="./fotos/wand-magic-sparkles-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SW" title="prüfung_hilfe">Schlüsselwörter</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon3">
+                    <i><img src="./fotos/image-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#SE" title="Grafische Erklärung über diese servic">Grafik</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon4">
+                    <i><img src="./fotos/question-solid.svg" alt="servic icon" width="30 px" height="30px"></i>
+                    <a href="#PF"  title="Beispiele prüfung Fragen">Question</a>
+                </div>
+            </div>
+            <div class="springen">
+                <div class="icon5">
+                    <a href="https://aws.amazon.com/de/iam/">gehe zu </a>
+                    <i><img src="./fotos/aws.svg" alt="servic icon" width="30 px" height="30px"></i>
+                </div>
+            </div>
+        </section>
+            <div class="AA">
+                <hr>
+                <br>
+            </div>
+    </header>
+        <main>
+            <div class="bschreibung" id="BS">
+                <h2>Beschreibung</h2>
+                <!-----------in <P> Lange erklärung----------->
+    
+                <p> <b>IAM (Identity and Access Management)</b> ist ein leistungsstarker AWS-Service, der die sichere Verwaltung von
+                    Benutzeridentitäten und Zugriffsrechten für AWS-Ressourcen ermöglicht. Durch die Implementierung von feingranularen
+                    Zugriffskontrollen können Benutzer und Anwendungen nur auf die für ihre Aufgaben relevanten Ressourcen zugreifen.
+                    IAM bietet eine Vielzahl von Funktionen, darunter die Verwaltung von Benutzern, Gruppen und Rollen, die Erstellung
+                    und Anwendung von Berechtigungsrichtlinien sowie die Integration mit anderen AWS-Services für eine umfassende
+                    Sicherheitslösung. Die Verwendung von <b>Multi-Faktor-Authentifizierung (MFA)</b> trägt zur Erhöhung der
+                    Sicherheitsebenen für den Zugriff bei.<br><br>
+                
+                    Ein zentrales Element von IAM sind die <b>IAM-Richtlinien</b>, die identitätsbasierte Zugriffskontrollen über
+                    Benutzernamen und Passwörter ermöglichen. Diese Richtlinien definieren und regeln die Berechtigungen für
+                    Amazon-Ressourcen und bieten Benutzern und Gruppen eine präzise Kontrolle über ihre Aktivitäten. Dank ihrer
+                    JSON-Formatierung sind IAM-Richtlinien leicht lesbar und unterstützen die Versionierung, um Änderungen im Laufe der
+                    Zeit zu verfolgen.<br><br>
+                
+                    Zusätzlich bietet IAM den <b>IAM Access Analyzer</b>, der die Einhaltung von Sicherheitsstandards überprüft und
+                    sicherstellt, dass die IAM-Richtlinien dem Prinzip des <b>Least Privilege</b> entsprechen. Dies gewährleistet, dass
+                    nur die erforderlichen Berechtigungen gewährt werden, um Aktionen mit minimalem Berechtigungsgrad
+                    auszuführen.<br><br>
+                
+                    IAM umfasst auch die Verwaltung von <b>IAM-Benutzern</b>, die Zugriffsschlüssel als langfristige
+                    Anmeldeinformationen verwenden, um automatisierten Zugriff auf AWS-Ressourcen zu ermöglichen. Zugriffsschlüssel
+                    bestehen aus einer Zugriffs-ID und einem geheimen Zugriffsschlüssel und werden für automatisierte Prozesse und
+                    Anwendungen verwendet. Es ist entscheidend, sicherzustellen, dass die Zugriffsschlüssel sicher aufbewahrt werden, um
+                    unbefugten Zugriff zu verhindern.<br><br>
+                
+                    Darüber hinaus ermöglicht IAM die Verwendung von <b>IAM-Rollen</b>, die ähnlich wie Benutzer funktionieren, jedoch
+                    keine eindeutige Zuordnung zu einer Person haben. Rollen ermöglichen die zeitlich begrenzte Delegierung von
+                    Berechtigungen und sind besonders nützlich, wenn erweiterte Rechte vorübergehend benötigt werden.<br><br>
+                
+                    IAM-Gruppen vereinfachen die Verwaltung von Berechtigungen für mehrere Benutzer gleichzeitig, da Berechtigungen
+                    einmal für die Gruppe konfiguriert werden können und alle Benutzer in der Gruppe automatisch diese Berechtigungen
+                    erben.<br><br>
+                
+                    Insgesamt bietet IAM eine präzise Steuerung des Ressourcenzugriffs für AWS-Umgebungen, was zu verbesserten
+                    Sicherheits- und Verwaltungsfunktionen führt.
+                </p>
+                <ul>
+                    <li><b>IAM (Identitäts- und Zugriffsmanagement):</b>
+                        <ul>
+                            <li>IAM ist ein AWS-Service zur sicheren Verwaltung von Benutzeridentitäten, Zugriffsrechten und
+                                Berechtigungen für AWS-Ressourcen.</li>
+                            <li>Feingranulare Zugriffskontrollen ermöglichen es Benutzern und Anwendungen, nur auf relevante Ressourcen
+                                zuzugreifen.</li>
+                            <li>IAM bietet Funktionen wie Benutzerverwaltung, Gruppen und Rollen, Berechtigungsrichtlinien und
+                                Integration mit anderen AWS-Services.</li>
+                            <li>Multi-Faktor-Authentifizierung (MFA) erhöht die Sicherheitsebenen für den Zugriff.</li>
+                            <li>IAM-Richtlinien ermöglichen eine detaillierte Kontrolle über Aktivitäten und Ressourcen.</li>
+                            <li>IAM Access Analyzer überprüft IAM-Richtlinien auf Einhaltung von Sicherheitsstandards.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li><b>IAM-Benutzer:</b>
+                        <ul>
+                            <li>IAM-Benutzer verwenden Zugriffsschlüssel für den automatisierten Zugriff auf AWS-Ressourcen.</li>
+                            <li>Zugriffsschlüssel bestehen aus einer Zugriffs-ID und einem geheimen Zugriffsschlüssel.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li><b>IAM-Rolle:</b>
+                        <ul>
+                            <li>IAM-Rollen ermöglichen die Delegierung von Berechtigungen ohne eindeutige Zuordnung zu einer Person.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li><b>IAM-Gruppe:</b>
+                        <ul>
+                            <li>IAM-Gruppen vereinfachen die Verwaltung von Berechtigungen für mehrere Benutzer gleichzeitig.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li><b>Andere Informationen zu IAM:</b>
+                        <ul>
+                            <li>IAM bietet präzise Steuerung des Ressourcenzugriffs für verbesserte Sicherheit und Verwaltbarkeit.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li><b>IAM:</b>
+                        <ul>
+                            <li>IAM bietet identitätsbasierte Zugriffskontrolle über Benutzernamen und Passwörter. Dies ermöglicht die
+                                Überwachung des Zugriffs auf AWS-Services basierend auf den Identitäten der Benutzer. Obwohl es sich um
+                                einen Sicherheitsdienst handelt, nutzt IAM kein maschinelles Lernen, um Bedrohungen und Probleme in
+                                Ihrem AWS-Konto zu erkennen.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li><b>IAM-Richtlinie:</b>
+                        <ul>
+                            <li>Die IAM-Richtlinie spezifiziert und regelt Amazon-Ressourcenberechtigungen. Es bietet Benutzern und
+                                Gruppen eine detaillierte Kontrolle über die Aktivitäten, die sie auf welchen AWS-Ressourcen ausführen
+                                können. Die Richtlinie ist als JSON-Dokument formatiert, was das Lesen und Schreiben erleichtert. Sie
+                                unterstützt auch die Versionierung, damit Änderungen im Laufe der Zeit verfolgt und Versionen bei Bedarf
+                                zurückgesetzt werden können. IAM-Richtlinien ermöglichen eine präzise Zugriffskontrolle und können mit
+                                anderen Amazon-Diensten wie AWS CloudTrail integriert werden, um alle API-Aufrufe an AWS-Ressourcen zu
+                                protokollieren und zu überwachen.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li><b>IAM Access Analyzer:</b>
+                        <ul>
+                            <li>IAM Access Analyzer ermöglicht die Überprüfung von IAM-Richtlinien und die Bewertung der Einhaltung von
+                                Sicherheitsstandards (Conformance) mit dem Prinzip des Least Privilege, um die Ausführung von Aktionen
+                                mit minimalem Berechtigungsgrad sicherzustellen.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li><b>IAM-Benutzer:</b>
+                        <ul>
+                            <li>IAM-Benutzer verwenden Zugriffsschlüssel als langfristige Anmeldeinformationen für den Zugriff auf
+                                AWS-Dienste. Hier sind einige wichtige Punkte zu IAM-Benutzern und Zugriffsschlüsseln:
+                                <ul>
+                                    <li>Zugriffsschlüssel als Langzeit-Anmeldeinformationen: IAM-Benutzer verwenden Zugriffsschlüssel
+                                        als langfristige Anmeldeinformationen, um Anfragen an AWS-Dienste zu signieren. Diese Schlüssel
+                                        ermöglichen automatisierten Zugriff auf AWS-Ressourcen im Namen des Benutzers.</li>
+                                    <li>Struktur der Zugriffsschlüssel: Ein Zugriffsschlüssel besteht aus einer Zugriffs-ID und einem
+                                        geheimen Zugriffsschlüssel. Diese Struktur ist ähnlich einem Benutzernamen und einem Passwort,
+                                        wobei die Zugriffs-ID öffentlich ist und der geheime Schlüssel geheim gehalten werden muss.</li>
+                                    <li>Automatisierte Zugriffe: Zugriffsschlüssel werden verwendet, um automatisierte Prozesse und
+                                        Anwendungen zu authentifizieren, die auf AWS-Dienste zugreifen müssen. Dies kann die Ausführung
+                                        von Skripten, die Interaktion mit APIs oder den Zugriff auf AWS-Ressourcen über SDKs umfassen.
+                                    </li>
+                                    <li>Geheime und nicht teilbare Informationen: Die Sicherheit der Zugriffsschlüssel ist entscheidend.
+                                        Der geheime Zugriffsschlüssel darf nicht geteilt werden und sollte sicher aufbewahrt werden,
+                                        ähnlich wie ein Passwort. Der Zugriffs-ID hingegen kann offen mitgeteilt werden.</li>
+                                    <li>Verwaltung von Zugriffsschlüsseln: IAM-Benutzer können mehrere Zugriffsschlüssel haben, und sie
+                                        können diese verwalten, einschließlich der Rotation von Schlüsseln aus Sicherheitsgründen.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li><b>IAM-Rolle:</b>
+                        <ul>
+                            <li>Eine IAM-Rolle ähnelt einem IAM-Benutzer, besitzt jedoch keine eindeutige Zuordnung zu einer Person. Sie
+                                repräsentiert eine AWS-Identität mit Berechtigungsrichtlinien, die bestimmen, welche Aktionen in AWS
+                                durchgeführt werden können. Rollen können von Bedarfsträgern übernommen werden, und sie ermöglichen die
+                                zeitlich begrenzte Delegierung von Berechtigungen. Dies ist besonders nützlich, wenn bestimmten
+                                Benutzern vorübergehend erweiterte Rechte gewährt werden müssen.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li><b>IAM-Gruppe:</b>
+                        <ul>
+                            <li>Eine IAM-Gruppe ist eine Sammlung von IAM-Benutzern, die es ermöglicht, Berechtigungen für mehrere
+                                Benutzer gleichzeitig festzulegen. Dies erleichtert die Verwaltung von Berechtigungen, da sie einmal für
+                                die Gruppe konfiguriert werden können und alle Benutzer in dieser Gruppe automatisch diese
+                                Berechtigungen erben. Gruppen ermöglichen die zeitlich unbegrenzte Übertragung von Berechtigungen an
+                                alle Benutzer innerhalb der Gruppe.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>IAM (Identitäts- und Zugriffsmanagement) ist ein AWS-Service zur sicheren Verwaltung von Benutzeridentitäten,
+                        Zugriffsrechten und Berechtigungen für AWS-Ressourcen.</li>
+                    <li>Feingranulare Zugriffskontrollen ermöglichen es Benutzern und Anwendungen, nur auf relevante Ressourcen
+                        zuzugreifen.</li>
+                    <li>IAM bietet Funktionen wie Benutzerverwaltung, Gruppen und Rollen, Berechtigungsrichtlinien und Integration mit
+                        anderen AWS-Services.</li>
+                    <li>Multi-Faktor-Authentifizierung (MFA) erhöht die Sicherheitsebenen für den Zugriff.</li>
+                    <li>IAM-Richtlinien ermöglichen eine detaillierte Kontrolle über Aktivitäten und Ressourcen.</li>
+                    <li>IAM Access Analyzer überprüft IAM-Richtlinien auf Einhaltung von Sicherheitsstandards.</li>
+                    <li>IAM-Benutzer verwenden Zugriffsschlüssel für den automatisierten Zugriff auf AWS-Ressourcen.</li>
+                    <li>Zugriffsschlüssel bestehen aus einer Zugriffs-ID und einem geheimen Zugriffsschlüssel.</li>
+                    <li>IAM-Rollen ermöglichen die Delegierung von Berechtigungen ohne eindeutige Zuordnung zu einer Person.</li>
+                    <li>IAM-Gruppen vereinfachen die Verwaltung von Berechtigungen für mehrere Benutzer gleichzeitig.</li>
+                    <li>IAM bietet präzise Steuerung des Ressourcenzugriffs für verbesserte Sicherheit und Verwaltbarkeit.</li>
+                </ul>
+                              
+                </div>
+            <div class="schlagworter"  id="SW">
+                <!-------------in <li> schlagwörter-------------->
+                <h2>Schlüsselwörter</h2>
+                <p>Schlüsselworte bzw. Schlagworte sollen uns dabei helfen, einen Service leichter zu erkennen, wenn es um Prüfungsfragen geht. Ließ dir die Fragen richtig durch und achte auf folgende Schlüsselworte. Sie können dir bei der Beantwortung der Fragen helfen.</p>
+                <ul>
+                    <li>Identitäts- und Zugriffsmanagement</li>
+                    <li>Kontrolle über AWS-Ressourcenzugriffe</li>
+                    <li>Benutzer-, Gruppen- und Rollenverwaltung</li>
+                    <li>Feingranulare Zugriffsberechtigungen</li>
+                    <li>Multi-Faktor-Authentifizierung (MFA)</li>
+                    <li>Integration mit Active Directory (AD)</li>
+                    <li>Zugriffsrichtlinien auf Ressourcenebene</li>
+                    <li>Sicherheitsüberwachung und -berichterstattung</li>
+                    <li>Temporäre Zugriffsberechtigungen (IAM-Rollen)</li>
+                    <li>Unterstützung für Identitätsföderation (z. B. SAML)</li>
+                    
+                                   
+                </ul>
+                <!-- <h4>Schlüsselwörter: RDS+Skalierbar</h4>  -->
+            </div>
+            <div class="Schematik"  id="SE">
+                <h2>Grafische Erklärung</h2>
+                <!--------in scr komm adresse von Grafische erklärung Foto(foto darf nur in folder "Fotos" sein)---------->
+                <img src="./fotos/IAMGrafischeErklärung.png" alt="schematische Erklärung" width="100%" height="auto">
+                <img src="./fotos/IAMGrafischeErklärung2.png" alt="schematische Erklärung" width="100%" height="auto">
+                <!-- <img src="./fotos/EC2-Spot.png" alt="schematische Erklärung" width="100%" height="auto"> -->
+            </div>
+            <div class="Frage"  id="PF">
+                <h2>Prüfung Fragen</h2>
+                <!-------------in <dt>+ soll frage geschrieben werden------------>
+                <dl><dt>Wie kann AWS Identity and Access Management (IAM) Unternehmen dabei unterstützen, Sicherheitsrisiken zu minimieren und Compliance-Anforderungen zu erfüllen?</dt></dl>
+                <ul class="F3">
+                    <input type="checkbox" id="v3" onclick="changeColor3(this)">
+                    <label for="v3">Durch die Implementierung von Single Sign-On (SSO) für Benutzer, um die Anzahl der Zugriffsberechtigungen zu reduzieren.</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor3(this)">
+                    <label for="v1">Durch die regelmäßige Überprüfung und Aktualisierung von IAM-Richtlinien, um den Zugriff auf sensible Ressourcen zu beschränken.</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor3(this)">
+                    <label for="v4">Durch die Verwendung von IAM-Rollen mit zeitlich begrenzten Berechtigungen, um die Einhaltung von Datenschutzvorschriften zu gewährleisten.</label><br>
+                    <input type="checkbox" id="v2" onclick="changeColor3(this)">
+                    <label for="v2">Durch die Konfiguration von IAM-Berechtigungsstufen basierend auf geografischen Standorten, um die Sicherheit von Datenübertragungen zu verbessern.</label><br>
+                </ul>
+                <dl><dt>Wie können Unternehmen IAM-Richtlinien effektiv konfigurieren, um den Zugriff auf AWS-Ressourcen basierend auf den individuellen Rollen und Verantwortlichkeiten der Benutzer zu steuern?</dt></dl>
+                <!---------------in 4 <label> soll die antworten sein(richtige Antwort soll id ="v1" haben ------------>
+                <ul class="F1">
+                    <input type="checkbox" id="v3" onclick="changeColor1(this)">
+                    <label for="v3">Durch die Verwendung von benutzerdefinierten Tags zur Zuweisung von IAM-Rollen und -Berechtigungen.</label><br>
+                    <input type="checkbox" id="v2"onclick="changeColor1(this)">
+                    <label for="v2">Durch die Implementierung von IAM-Gruppen für verschiedene Benutzerkategorien und die Zuweisung von Richtlinien an Gruppen.</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor1(this)">
+                    <label for="v4">Durch die Integration von IAM mit externen Identitätsanbietern (IdPs) zur zentralen Benutzerauthentifizierung und -authentifizierung.</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor1(this)">
+                    <label for="v1">Durch die Verwendung von IAM-Richtlinien mit bedingten Anweisungen, um Zugriffsberechtigungen basierend auf bestimmten Kontexten zu steuern.</label><br>
+                </ul>
+                <dl><dt>Wie unterscheidet sich IAM von anderen AWS-Sicherheitsdiensten wie AWS Shield oder AWS WAF?</dt></dl>
+                <ul class="F2">
+                    <input type="checkbox" id="v2" onclick="changeColor2(this)">
+                    <label for="v2">IAM bietet detaillierte Einblicke in die Nutzungsaktivität von Benutzern und Ressourcen, während Shield und WAF sich auf die Abwehr von DDoS-Angriffen und Webanwendungsangriffen konzentrieren.</label><br>
+                    <input type="checkbox" id="v3" onclick="changeColor2(this)">
+                    <label for="v3">IAM ermöglicht die Implementierung von Sicherheitsrichtlinien für CloudFront-Distributionen, während Shield und WAF sich auf die Sicherung von Lambda-Funktionen konzentrieren.</label><br>
+                    <input type="checkbox" id="v4" onclick="changeColor2(this)">
+                    <label for="v4">IAM bietet integrierte Verschlüsselungslösungen für Datenübertragungen, während Shield und WAF sich auf die Sicherung von S3-Buckets konzentrieren.</label><br>
+                    <input type="checkbox" id="v1" onclick="changeColor2(this)">
+                    <label for="v1">IAM ermöglicht die Verwaltung von Benutzerzugriffen auf AWS-Ressourcen, während Shield und WAF sich auf die Sicherung von Netzwerken und Webanwendungen konzentrieren.</label><br>
+                </ul>
+                <a href="https://aws-cpt.rungame.de/login" target="_black">für weitere Prüfungsfragen zum rungame</a>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="right">
+                  <div class="title">
+                    über uns
+                  </div>
+                  <div class="des">
+                    Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quaerat cumque. Mollitia, id labore? Voluptas deserunt possimus expedita maxime atque veritatis nisi, soluta ratione magni amet excepturi repudiandae sequi nemo molestias quod, rerum laboriosam ullam quaerat recusandae fugit doloribus odit, quia totam! Inventore, quas, eligendi possimus aut expedita ut tempore, repudiandae dignissimos itaque nostrum veniam minus autem dicta amet ducimus? ipsum, dolor sit amet consectetur adipisicing elit. Harum dolorum accusantium magni odio voluptatibus impedit sunt laborum maxime libero quaerat suscipit obcaecati accusamus rerum debitis esse quod fugit aliquam eaque blanditiis totam ab, ad incidunt voluptatem porro. Explicabo in eligendi placeat illo! Aliquam neque adipisci ducimus inventore ipsam nobis praesentium.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="left">
+                  <div class="title">
+                    folg uns 
+                  </div>
+                  <div class="socials">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-telegram-plane"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+                2024 Techfox ©
+            </div>
+          </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
