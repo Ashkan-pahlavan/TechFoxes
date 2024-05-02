@@ -1,53 +1,9 @@
-// function moveToSection() {
-//     // Hedayat be bakhshe digar
-//     var section = document.getElementById('section2'); // ID-e bakhshe dasti
-//     section.scrollIntoView({ behavior: 'smooth' }); // Hedayat be bakhshe digar ba efekti aramtar
-// }
-// document.addEventListener("DOMContentLoaded", function () {
-//     window.onscroll = function () {
-//         makeNavbarSticky();
-//     };
-
-//     function makeNavbarSticky() {
-//         const navbar = document.getElementById("navbar");
-//         const sticky = navbar.offsetTop;
-
-//         if (window.pageYOffset > sticky) {
-//             navbar.classList.add("sticky");
-//         } else {
-//             navbar.classList.remove("sticky");
-//         }
-//     }
-// });
-
-
-
-
-// window.addEventListener('scroll', function() {
-//     var headerSection = document.querySelector('header section');
-//     var scrollPosition = window.scrollY;
-
-//     if (scrollPosition > 270) {
-
-//         headerSection.style.position = 'fixed';
-//         headerSection.style.display = 'block';
-//         headerSection.style.top = '400px'; // Neue Top-Position
-//         headerSection.style.transition = 'top 1.8s ease'; // Übergangseffekt auf die Top-Position
-
-//     } else {
-//         headerSection.style.position = 'static';
-//         headerSection.style.display = 'flex';
-//         headerSection.style.top = '30px';
-//     }
-// });
-
-
 
 window.addEventListener('scroll', function() {
     var headerSection = document.querySelector('header section');
     var scrollPosition = window.scrollY;
 
-    if (scrollPosition > 315) {
+    if (scrollPosition > 300) {
         headerSection.classList.add('move-right'); // fügt die CSS-Klasse hinzu, um die Position zu ändern
     } else {
         headerSection.classList.remove('move-right'); // entfernt die CSS-Klasse, um zur ursprünglichen Position zurückzukehren

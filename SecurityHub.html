@@ -14,16 +14,16 @@
         <nav>
             <div class="nav-left">
                 <!-----------in <h1> servic name---------->
-                <h1 style="text-shadow:4px 1px 4px rgb(48, 166, 21) ;">Amazon EFS</h1>
-                <small style="color: rgb(48, 166, 21);">Amazon Elastic File System </small>
+                <h1 style="text-shadow:4px 1px 4px rgb(234, 85, 52)  ;">AWS Security Hub</h1>
+                <small style="color: rgb(234, 85, 52) ;">AWS Service Health Dashboard  </small>
             </div>
             <div class="nav-right">
-                <img src="./fotos/efs.svg" alt="servic icon" width="100 px" height="100px">
+                <img src="./fotos/SH.jpg" alt="servic icon" width="100 px" height="100px">
             </div>
         </nav>       
             <div>
                 <!--------in <h3> kutz erklärung----------->
-                <h3>>> Vollständig elastischer Serverless-Datenspeicher</h3>
+                <h3 >>> AWS-Sicherheitsprüfungen automatisieren und Sicherheitswarnungen zentralisieren</h3>
                 <hr>
             </div>
         <section id="navbar">
@@ -54,7 +54,7 @@
             </div>
             <div class="springen">
                 <div class="icon5">
-                    <a href="https://aws.amazon.com/de/efs/?nc2=type_a  " target="_black" title="für weitere info können sie direkt zu AWS gehen ">gehe zu </a>
+                    <a href="https://docs.aws.amazon.com/de_de/fis/latest/userguide/what-is.html " target="_black" title="für weitere info können sie direkt zu AWS gehen ">gehe zu </a>
                     <i><img src="./fotos/aws.svg" alt="servic icon" width="30 px" height="30px"></i>
                 </div>
             </div>
@@ -69,15 +69,13 @@
                 <h2>Beschreibung</h2>
                 <!-----------in <P> Lange erklärung----------->
                 <p>
-                    Das <b>Amazon Elastic File System (EFS)</b>  wächst und schrumpft automatisch, wenn Sie Dateien hinzufügen oder entfernen, ohne dass eine Verwaltung oder Bereitstellung erforderlich ist.
-                    Amazon EFS ist ein <b> Datei-Speicherdienst</b> , der für die Verwendung mit<b>  Amazon EC2</b>  entwickelt wurde. Hier sind einige wichtige Merkmale:<br><br>
-                    <b>* Dateisystem Schnittstelle und Zugriff Semantik:</b> Amazon EFS bietet eine Dateisystem Schnittstelle und Dateisystemzugriff Semantik für Tausende von Amazon EC2-Instanzen.<br><br>
-                    <b>* Protokoll:</b> Amazon EFS verwendet das Network File System (NFS)-Protokoll.<br><br>
-                    <b>* Elastisches, skalierbares und vollständig verwaltetes NFS-Dateisystem:</b> Es bietet ein einfaches, skalierbares und vollständig verwaltetes elastisches NFS-Dateisystem für die Verwendung mit AWS Cloud-Diensten und lokalen Ressourcen.<br><br>
-                    <b>* Mehrere Zugriffszonen, Zonen und VPCs:</b> EC2-Instanzen können über mehrere Zugriffszeiten, Zonen und VPCs hinweg auf Dateien in einem EFS-Dateisystem zugreifen.<br><br>
-                    <b>* Interne Server Flotte:</b> EFS verfügt über eine Flotte interner Server, die eine zentrale, skalierbare und stabile Datenspeicherung erfordern. Es sollte in der Lage sein, massiv parallelen Zugriff zu unterstützen.<br><br>
-                    Amazon EFS ist besonders nützlich, wenn Sie ein gemeinsam genutztes Dateisystem für Ihre Anwendungen benötigen, das von mehreren EC2-Instanzen in einer AWS-Umgebung genutzt werden kann.<br><br>
-                    <br><br>
+                  AWS Security Hub spielt eine zentrale Rolle beim Sammeln von Sicherheitswarnungen und der Durchführung von Infrastruktur-Sicherheitsüberprüfungen in der AWS-Cloud. <br><br>Als zentraler Knotenpunkt aggregiert, organisiert und priorisiert er Sicherheitsereignisse aus diversen AWS-Diensten, darunter Macie.<br><br>
+                  Der Service bietet folgende Hauptfunktionen:<br><br>
+                  AWS Security Hub sammelt Sicherheitswarnungen aus verschiedenen Quellen, einschließlich AWS-Diensten wie Macie, und ermöglicht eine übersichtliche Anzeige sowie Verwaltung der Sicherheitsinformationen.<br><br>
+                  Es löst Sicherheitsüberprüfungen der AWS-Infrastruktur aus, beispielsweise durch Watchdog-Aufgaben, um bekannte Sicherheitsprobleme oder Konfigurationsfehler zu identifizieren.<br><br>
+                  Durch die Unterstützung der Automatisierung von Sicherheitsmaßnahmen können aufgrund erkannter Sicherheitswarnungen oder -probleme automatisch Maßnahmen ergriffen werden. Dadurch verkürzt sich die Reaktionszeit auf Sicherheitsvorfälle, und vordefinierte Aktionen werden sofort ausgeführt.<br><br>
+                  Insgesamt bietet AWS Security Hub eine konsolidierte Ansicht der Sicherheitslage in Ihrer AWS-Umgebung. Durch die Automatisierung von Sicherheitsmaßnahmen können Sicherheitsvorfälle schneller erkannt und darauf reagiert werden.<br><br>
+                
                 </p>
             </div>
             <div class="schlagworter"  id="SW">
@@ -99,46 +97,46 @@
             <div class="Schematik"  id="SE">
                 <h2>Grafische Erklärung</h2>
                 <!--------in scr komm adresse von Grafische erklärung Foto(foto darf nur in folder "Fotos" sein)---------->
-                <img src="./fotos/efs.png" alt="schematische Erklärung" width="100%" height="auto">
+                <img src="./fotos/SHH.png" alt="schematische Erklärung" width="100%" height="auto">
                 <!-- <img src="./fotos/EC2-Spot.png" alt="schematische Erklärung" width="100%" height="auto"> -->
             </div>
             <div class="Frage"  id="PF">
                 <h2>Prüfung Fragen</h2>
                 <!-------------in <dt>+ soll frage geschrieben werden------------>
-                <dl><dt>Welcher der folgenden AWS-Speicherservices kann direkt mit On-Premises-Systemen verwendet werden?</dt></dl>
-                <ul class="F3">
-                    <input type="checkbox" id="v2" onclick="changeColor3(this)">
-                    <label for="v2"> Amazon Elastic Block Store (EBS)</label><br>
-                    <input type="checkbox" id="v3" onclick="changeColor3(this)">
-                    <label for="v3">Amazon EC2-Instanzspeicher </label><br>
-                    <input type="checkbox" id="v1" onclick="changeColor3(this)">
-                    <label for="v1">Amazon Elastic File System (Amazon EFS)</label><br>
-                    <input type="checkbox" id="v4" onclick="changeColor3(this)">
-                    <label for="v4">Amazon Simple Storage Service (Amazon S3)</label><br>
-                </ul>
-                <dl><dt>Welcher der folgenden Anwendungsfälle eignet sich am besten für die Speicherklasse Amazon Elastic File System (EFS) Standard-Infrequent Access (Standard-IA)?</dt></dl>
-                <!---------------in 4 <label> soll die antworten sein(richtige Antwort soll id ="v1" haben ------------>
-                <ul class="F1">
-                    <input type="checkbox" id="v2" onclick="changeColor1(this)">
-                    <label for="v2"> Speichern von Daten in einer einzelnen AWS Availability Zone</label><br>
-                    <input type="checkbox" id="v1" onclick="changeColor1(this)">
-                    <label for="v1">Dateien an einem zugänglichen Ort speichern, um Prüfanforderungen zu erfüllen</label><br>
-                    <input type="checkbox" id="v3" onclick="changeColor1(this)">
-                    <label for="v3"> Objektspeicher für Workloads, die Latenzgeschwindigkeiten von unter einer Sekunde für den Zugriff auf die Daten benötigen</label><br>
-                    <input type="checkbox" id="v4" onclick="changeColor1(this)">
-                    <label for="v4">Verwendung als Boot-Volume für hochverfügbare Amazon EC2-Instances </label><br>
-                </ul>
-                <dl><dt>Welche AWS-Services unterstützen standardmäßig Hochverfügbarkeit? </dt></dl>
-                <ul class="F2">
-                    <input type="checkbox" id="v2" onclick="changeColor2(this)">
-                    <label for="v2">Instance-Speicher</label><br>
-                    <input type="checkbox" id="v4" onclick="changeColor2(this)">
-                    <label for="v4">Amazon Redshift </label><br>
-                    <input type="checkbox" id="v1" onclick="changeColor2(this)">
-                    <label for="v1"> Amazon Elastic File System (Amazon EFS)</label><br>
-                    <input type="checkbox" id="v3" onclick="changeColor2(this)">
-                    <label for="v3">Amazon Elastic Block Store (Amazon EBS)</label><br>
-                </ul>
+                    <dl><dt>Was ist die Hauptfunktion von AWS Security Hub?</dt></dl>
+                    <!---------------in 4 <label> soll die antworten sein(richtige Antwort soll id ="v1" haben ------------>
+                    <ul class="F1">
+                        <input type="checkbox" id="v2" onclick="changeColor1(this)">
+                        <label for="v2">Bereitstellung von virtuellen Firewalls für AWS-Umgebungen</label><br>
+                        <input type="checkbox" id="v1" onclick="changeColor1(this)">
+                        <label for="v1">Automatisierte Sicherheitsprüfung und -überwachung von AWS-Ressourcen </label><br>
+                        <input type="checkbox" id="v3" onclick="changeColor1(this)">
+                        <label for="v3"> Bereitstellung von verschlüsselten Speicherlösungen für sensible Daten</label><br>
+                        <input type="checkbox" id="v4" onclick="changeColor1(this)">
+                        <label for="v4">Verwaltung von Benutzerzugriffsrechten auf AWS-Ressourcen</label><br>
+                    </ul>
+                    <dl><dt>Welche Art von Informationen bietet AWS Security Hub hauptsächlich?</dt></dl>
+                    <ul class="F2">
+                        <input type="checkbox" id="v2" onclick="changeColor2(this)">
+                        <label for="v2">Leistungsdaten von EC2-Instanzen</label><br>
+                        <input type="checkbox" id="v4" onclick="changeColor2(this)">
+                        <label for="v4">Betriebsstatus von RDS-Datenbanken </label><br>
+                        <input type="checkbox" id="v3" onclick="changeColor2(this)">
+                        <label for="v3">Netzwerkprotokolldaten von ELB-Instanzen</label><br>
+                        <input type="checkbox" id="v1" onclick="changeColor2(this)">
+                        <label for="v1">Sicherheits- und Compliance-Daten für AWS-Umgebungen</label><br>
+                    </ul>
+                    <dl><dt>Welche Vorteile bietet AWS Security Hub den Benutzern?</dt></dl>
+                    <ul class="F3">
+                        <input type="checkbox" id="v2" onclick="changeColor3(this)">
+                        <label for="v2">  Optimierung von Serverkonfigurationen</label><br>
+                        <input type="checkbox" id="v3" onclick="changeColor3(this)">
+                        <label for="v3">Bereitstellung von Live-Chat-Support für Sicherheitsfragen</label><br>
+                        <input type="checkbox" id="v1" onclick="changeColor3(this)">
+                        <label for="v1"> Zentralisierte Sicherheits- und Compliance-Dashboard-Ansichten </label><br>
+                        <input type="checkbox" id="v4" onclick="changeColor3(this)">
+                        <label for="v4"> Automatisierte Bereitstellung von Antivirensoftware auf EC2-Instanzen</label><br>
+                    </ul>
                 <a href="https://aws-cpt.rungame.de/login" target="_black">für weitere Prüfungsfragen zum rungame</a>
             </div>
         </main>

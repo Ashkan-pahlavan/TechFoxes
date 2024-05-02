@@ -30,6 +30,9 @@ h4 {
     padding-left: 30px;
     color: white;
 }
+li{
+    font-size: 1.4em;
+}
 /* -------------------------- header---------------------------- */
 header{
     background-image: url(../fotos/header.jpg);
@@ -230,6 +233,7 @@ header section .springen .icon5 i{
 /* -----------------------------main-------------------------------- */
 main .bschreibung{
     background-image: url(../fotos/DD.jpg);
+    /* background-color: #ffffffec; */
     filter: blur(0px);
     background-repeat: no-repeat;
     background-size: cover;
@@ -243,8 +247,9 @@ main .bschreibung{
 }
 
 main .schlagworter{
-    font-size: 1.5em;
+    font-size: 1.2em;
     background-image: url(../fotos/gggg.png);
+    /* background-color: #ffffff19; */
     /* filter: blur(0px);
     z-index: -1;
     opacity: 0.5; */
@@ -264,7 +269,7 @@ main .schlagworter{
 } */
 main .schlagworter h2{
     font-size: 1.7em;
-    color: #58ac6a;
+    color: #0a8a26;
 }
 main .schlagworter p{
     font-size: .7em;
@@ -274,6 +279,7 @@ main .schlagworter li{
     padding: 5px 5px 20px 10px;
 }
 main .Schematik{
+    /* background-color: #ffffff8d; */
     background-image: url(../fotos/BGF.jpg);
     background-repeat: no-repeat;
     background-size: cover;

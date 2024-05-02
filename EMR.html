@@ -80,22 +80,16 @@
             <div class="schlagworter"  id="SW">
                 <!-------------in <li> schlagwörter-------------->
                 <h2>Schlüsselwörter</h2>
-                <p> > > > erklärung über schlagwörter: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque harum distinctio dolorem architecto laboriosam nihil. Rerum incidunt nihil quas.</p>
+                <p> > > >  Schlüsselworte bzw. Schlagworte sollen uns dabei helfen, einen Service leichter zu erkennen, wenn es um Prüfungsfragen geht. Ließ dir die Fragen richtig durch und achte auf folgende Schlüsselworte. Sie können dir bei der Beantwortung der Fragen helfen.</p>
                 <ul>
-                    <li>Dateisysteme: Amazon EFS ermöglicht die Erstellung von skalierbaren und elastischen Dateisystemen, die von mehreren EC2-Instanzen gleichzeitig genutzt werden können.</li>
-                    <li>Network File System (NFS): EFS basiert auf dem NFS-Protokoll und bietet dadurch eine standardisierte und weit verbreitete Schnittstelle für den Dateizugriff.</li>
-                    <li>Regionale Verwendung: EFS ist in der Lage, in einer AWS-Region über mehrere Verfügbarkeitszonen hinweg bereitzustellen, um Hochverfügbarkeit und Zuverlässigkeit sicherzustellen.</li>
-                    <li>Elasticity: EFS passt sich automatisch an die Größe der gespeicherten Daten an, ohne dass manuelle Anpassungen erforderlich sind.</li>
-                    <li>Performance: EFS bietet skalierbare Leistung, die mit der Anzahl der verwendeten Dateisysteme und der Datenmenge skaliert.</li>
-                    <li>Zugriffskontrolle: AWS Identity and Access Management (IAM) kann verwendet werden, um den Zugriff auf Amazon EFS zu steuern.</li>
-                    <li>Encryption: EFS bietet die Möglichkeit, Daten im Ruhezustand mit AWS Key Management Service (KMS) zu verschlüsseln.</li>
-                    <li>Infrequent Access (IA) Storage Class: Die Möglichkeit, Infrequent Access Storage Class zu verwenden, um Kosten für selten genutzte Daten zu reduzieren.</li>
-                    <li>Lifecycle Management: Automatisches Verwalten der Kosten durch Verwendung von Lifecycle-Managementrichtlinien für Dateisysteme.</li>
-                    <li>Mount Targets: Konfigurierbare Mount Targets in den Verfügbarkeitszonen, um den Zugriff auf EFS in verschiedenen Zonen zu ermöglichen.</li>
-                    <li>AWS Backup Integration: Integration mit AWS Backup zur Sicherung und Wiederherstellung von Amazon EFS-Dateisystemen.</li>
-                    <li>AWS CloudFormation Integration: EFS kann über AWS CloudFormation verwaltet und bereitgestellt werden.</li>
-                    <li>File Sync: AWS DataSync kann für die schnelle und sichere Übertragung großer Datenmengen zwischen lokalen Speicherorten und Amazon EFS verwendet werden.</li>
-                </ul>
+                    <li>Container-Orchestrierung: ECS ermöglicht daren von Docker-Containern in der AWS-Cloud.</li>
+                    <li>Container-Definitionen: Definition von Containber die Verwendung von Aufgaben (Tasks) und Services.</li>
+                    <li>Docker-Integration: ECS unterstützt Docker-Container und ermöng von Docker-Images.</li>
+                    <li>Task-Definitionen: Spezifikationen, wie eine Aufgabe (Task) in einvon Services, um langfristig laufende Anwendungetartet und Aufgaben ausgeführt werden.</li>
+                    <li>Auto Scaling: Automatische Anpassung der Anzahl von las basieinierbaren Metriken.</li>
+                    <li>Load Balancing: Integration mit dem Elastic Load Balancing-Dienst für die Lr.</li>
+                    <li>AWS Fargate: Option zur Ausführung von Containern ohne die Notwendigkeit, EC2.</li>
+                    <li>Integration mit Amazon ECR: Nahtlose Integration mit d</li>
                 <!-- <h4>Schlüsselwörter: RDS+Skalierbar</h4>  -->
             </div>
             <div class="Schematik"  id="SE">
@@ -107,39 +101,39 @@
             <div class="Frage"  id="PF">
                 <h2>Prüfung Fragen</h2>
                 <!-------------in <dt>+ soll frage geschrieben werden------------>
-                <dl><dt>Welcher der folgenden AWS-Speicherservices kann direkt mit On-Premises-Systemen verwendet werden?</dt></dl>
+                <dl><dt>Welcher AWS-Service kann zur Bereitstellung von Ressourcen für die Ausführung von Big Data-Workloads auf Hadoop-Clustern verwendet werden?</dt></dl>
                 <ul class="F3">
                     <input type="checkbox" id="v2" onclick="changeColor3(this)">
-                    <label for="v2"> Amazon Elastic Block Store (EBS)</label><br>
+                    <label for="v2"> AWS Step Function</label><br>
                     <input type="checkbox" id="v3" onclick="changeColor3(this)">
-                    <label for="v3">Amazon EC2-Instanzspeicher </label><br>
+                    <label for="v3">AWS Batch </label><br>
                     <input type="checkbox" id="v1" onclick="changeColor3(this)">
-                    <label for="v1">Amazon Elastic File System (Amazon EFS)</label><br>
+                    <label for="v1">Amazon EMR</label><br>
                     <input type="checkbox" id="v4" onclick="changeColor3(this)">
-                    <label for="v4">Amazon Simple Storage Service (Amazon S3)</label><br>
+                    <label for="v4">Amazon EC2</label><br>
                 </ul>
-                <dl><dt>Welcher der folgenden Anwendungsfälle eignet sich am besten für die Speicherklasse Amazon Elastic File System (EFS) Standard-Infrequent Access (Standard-IA)?</dt></dl>
+                <dl><dt> Was ist AWS EMR?</dt></dl>
                 <!---------------in 4 <label> soll die antworten sein(richtige Antwort soll id ="v1" haben ------------>
                 <ul class="F1">
                     <input type="checkbox" id="v2" onclick="changeColor1(this)">
-                    <label for="v2"> Speichern von Daten in einer einzelnen AWS Availability Zone</label><br>
+                    <label for="v2">Eine Plattform für die Verwaltung von Serverless-Architekturen in der Cloud</label><br>
                     <input type="checkbox" id="v1" onclick="changeColor1(this)">
-                    <label for="v1">Dateien an einem zugänglichen Ort speichern, um Prüfanforderungen zu erfüllen</label><br>
+                    <label for="v1">Ein Dienst zur Bereitstellung und Skalierung von Big-Data-Anwendungen.</label><br>
                     <input type="checkbox" id="v3" onclick="changeColor1(this)">
-                    <label for="v3"> Objektspeicher für Workloads, die Latenzgeschwindigkeiten von unter einer Sekunde für den Zugriff auf die Daten benötigen</label><br>
+                    <label for="v3"> Eine Datenbanklösung für die Analyse von strukturierten Daten.</label><br>
                     <input type="checkbox" id="v4" onclick="changeColor1(this)">
-                    <label for="v4">Verwendung als Boot-Volume für hochverfügbare Amazon EC2-Instances </label><br>
+                    <label for="v4">Ein Dienst zur Verwaltung von Netzwerksicherheit in der AWS-Cloud. </label><br>
                 </ul>
-                <dl><dt>Welche AWS-Services unterstützen standardmäßig Hochverfügbarkeit? </dt></dl>
+                <dl><dt>Welche Art von Datenverarbeitung unterstützt AWS EMR hauptsächlich? </dt></dl>
                 <ul class="F2">
                     <input type="checkbox" id="v2" onclick="changeColor2(this)">
-                    <label for="v2">Instance-Speicher</label><br>
+                    <label for="v2">Stream-Verarbeitung von Echtzeitdaten</label><br>
                     <input type="checkbox" id="v4" onclick="changeColor2(this)">
-                    <label for="v4">Amazon Redshift </label><br>
+                    <label for="v4"> Echtzeit-Analyse von Netzwerkprotokolldaten</label><br>
                     <input type="checkbox" id="v1" onclick="changeColor2(this)">
-                    <label for="v1"> Amazon Elastic File System (Amazon EFS)</label><br>
+                    <label for="v1">Batch-Verarbeitung von großen Datenmengen</label><br>
                     <input type="checkbox" id="v3" onclick="changeColor2(this)">
-                    <label for="v3">Amazon Elastic Block Store (Amazon EBS)</label><br>
+                    <label for="v3">Verarbeitung von Videodateien für Streaming-Plattformen.</label><br>
                 </ul>
                 <a href="https://aws-cpt.rungame.de/login" target="_black">für weitere Prüfungsfragen zum rungame</a>
             </div>
